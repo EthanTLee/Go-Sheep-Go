@@ -1,0 +1,66 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "core_lib",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "core_lib",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "GoSheepGo",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "GoSheepGo::@736bc72213520368d6a2",
+					"jsonFile" : "target-GoSheepGo-Debug-e5a9f0f8ad7dca4bd6cd.json",
+					"name" : "GoSheepGo",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/peepeepoopoo/projects/GoSheepGo/build",
+		"source" : "/Users/peepeepoopoo/projects/GoSheepGo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}
