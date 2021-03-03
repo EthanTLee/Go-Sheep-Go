@@ -49,5 +49,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/GoSheep.dir/DependInfo.cmake"
   "core_lib/CMakeFiles/GoSheepGo.dir/DependInfo.cmake"
   )

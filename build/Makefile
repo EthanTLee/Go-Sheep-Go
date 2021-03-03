@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named GoSheep
+
+# Build rule for target.
+GoSheep: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GoSheep
+.PHONY : GoSheep
+
+# fast build rule for target.
+GoSheep/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/build
+.PHONY : GoSheep/fast
+
+#=============================================================================
 # Target rules for targets named GoSheepGo
 
 # Build rule for target.
@@ -142,6 +155,21 @@ GoSheepGo/fast:
 	$(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/build
 .PHONY : GoSheepGo/fast
 
+# target to build an object file
+main.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.o
+.PHONY : main.o
+
+# target to preprocess a source file
+main.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.i
+.PHONY : main.i
+
+# target to generate assembly for a file
+main.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.s
+.PHONY : main.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,7 +178,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... GoSheep"
 	@echo "... GoSheepGo"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

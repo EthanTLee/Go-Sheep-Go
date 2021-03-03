@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <exception>
+#include "GoSheepGo/GoSheepGo.hh"
+
 
 
 SDL_Rect CreateRect (int x, int y, int w, int h)

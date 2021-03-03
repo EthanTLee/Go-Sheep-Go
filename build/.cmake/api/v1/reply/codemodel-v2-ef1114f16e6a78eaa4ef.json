@@ -11,7 +11,11 @@
 						1
 					],
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "core_lib",
@@ -20,7 +24,7 @@
 					"source" : "core_lib",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				}
 			],
@@ -36,16 +40,24 @@
 					"name" : "GoSheepGo",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 0,
+					"id" : "GoSheep::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GoSheep-Debug-7fcaa2cc19bb7c966e7e.json",
+					"name" : "GoSheep",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "GoSheepGo::@736bc72213520368d6a2",
-					"jsonFile" : "target-GoSheepGo-Debug-e5a9f0f8ad7dca4bd6cd.json",
+					"jsonFile" : "target-GoSheepGo-Debug-d4a7c105c9785dc182bd.json",
 					"name" : "GoSheepGo",
 					"projectIndex" : 0
 				}
