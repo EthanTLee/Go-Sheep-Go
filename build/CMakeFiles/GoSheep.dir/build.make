@@ -79,15 +79,15 @@ include CMakeFiles/GoSheep.dir/flags.make
 CMakeFiles/GoSheep.dir/main.o: CMakeFiles/GoSheep.dir/flags.make
 CMakeFiles/GoSheep.dir/main.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoSheep.dir/main.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheep.dir/main.o -c /Users/peepeepoopoo/projects/GoSheepGo/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheep.dir/main.o -c /Users/peepeepoopoo/projects/GoSheepGo/main.cpp
 
 CMakeFiles/GoSheep.dir/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheep.dir/main.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/main.cpp > CMakeFiles/GoSheep.dir/main.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/main.cpp > CMakeFiles/GoSheep.dir/main.i
 
 CMakeFiles/GoSheep.dir/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheep.dir/main.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/main.cpp -o CMakeFiles/GoSheep.dir/main.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/main.cpp -o CMakeFiles/GoSheep.dir/main.s
 
 # Object files for target GoSheep
 GoSheep_OBJECTS = \
