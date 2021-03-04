@@ -207,6 +207,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:STRING=/Users/peepeepoopoo/projects/vcpkg/scripts/buildsystems/vcpkg.cmake
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -220,13 +223,19 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 GoSheepGo_BINARY_DIR:STATIC=/Users/peepeepoopoo/projects/GoSheepGo/build
 
 //Dependencies for the target
-GoSheepGo_LIB_DEPENDS:STATIC=general;/Users/peepeepoopoo/projects/GoSheepGo/extern/SDL2/libs/libSDL2.dylib;general;/Users/peepeepoopoo/projects/GoSheepGo/extern/SDL2/libs/libSDL2_image.dylib;
+GoSheepGo_LIB_DEPENDS:STATIC=general;SDL2::SDL2main;general;SDL2::SDL2-static;
 
 //Value Computed by CMake
 GoSheepGo_SOURCE_DIR:STATIC=/Users/peepeepoopoo/projects/GoSheepGo
 
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
+
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
+
+//The directory containing a CMake configuration file for sdl2-image.
+sdl2-image_DIR:PATH=sdl2-image_DIR-NOTFOUND
 
 
 ########################
@@ -291,6 +300,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.

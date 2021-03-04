@@ -4,8 +4,9 @@
 #include <vector>
 #include <exception>
 #include "GoSheepGo/GoSheepGo.hh"
+#include "GoSheepGo/GoSheepHelpers.hh"
 
-
+using namespace gosheep;
 
 SDL_Rect CreateRect (int x, int y, int w, int h)
 {
@@ -18,17 +19,7 @@ SDL_Rect CreateRect (int x, int y, int w, int h)
     return ret;
 }
 
-template <typename T>
-class __not_null__{
-    public :
-    __not_null__(T ptr){
-        m_ptr = ptr;
-        if(!m_ptr){
-            throw std::runtime_error("Pointer must not be null pointer!");
-        }
-    }
-    T  m_ptr = nullptr;
-};
+
 
 
 void program(int argc, char* argv[]){

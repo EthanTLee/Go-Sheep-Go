@@ -2,68 +2,61 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "core_lib/libGoSheepGo.dylib"
+			"path" : "tests/my_test"
 		}
 	],
-	"backtrace" : 1,
+	"backtrace" : 2,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
-			"add_library",
+			"_add_executable",
+			"add_executable",
 			"target_link_libraries",
-			"target_compile_definitions",
-			"include_directories",
-			"target_include_directories",
-			"set_property"
+			"include_directories"
 		],
 		"files" : 
 		[
-			"core_lib/CMakeLists.txt",
+			"/Users/peepeepoopoo/projects/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"tests/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
 			{
-				"file" : 0
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
-				"parent" : 0
+				"line" : 660,
+				"parent" : 1
 			},
 			{
-				"command" : 1,
-				"file" : 0,
+				"command" : 2,
+				"file" : 1,
 				"line" : 9,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 17,
-				"parent" : 0
-			},
-			{
-				"file" : 1
+				"file" : 2
 			},
 			{
 				"command" : 3,
-				"file" : 1,
+				"file" : 2,
 				"line" : 3,
 				"parent" : 4
 			},
 			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 14,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 0,
-				"line" : 7,
+				"command" : 2,
+				"file" : 1,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -74,10 +67,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC"
+					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk"
 				},
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"defines" : 
@@ -85,9 +78,6 @@
 				{
 					"backtrace" : 3,
 					"define" : "GoSheepGo"
-				},
-				{
-					"define" : "GoSheepGo_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -97,8 +87,13 @@
 					"path" : "/Users/peepeepoopoo/projects/GoSheepGo/extern/SDL2/includes"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 3,
 					"path" : "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include"
 				}
 			],
 			"language" : "CXX",
@@ -106,9 +101,27 @@
 			{
 				"backtraces" : 
 				[
-					7
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6,
+					6
 				],
-				"standard" : "17"
+				"standard" : "11"
 			},
 			"sourceIndexes" : 
 			[
@@ -116,7 +129,14 @@
 			]
 		}
 	],
-	"id" : "GoSheepGo::@736bc72213520368d6a2",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "GoSheepGo::@736bc72213520368d6a2"
+		}
+	],
+	"id" : "my_test::@a44f0ac069e85531cdee",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -126,24 +146,19 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "../../extern/SDL2/libs/libSDL2.dylib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "../../extern/SDL2/libs/libSDL2_image.dylib",
+				"backtrace" : 3,
+				"fragment" : "../core_lib/libGoSheepGo.dylib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "GoSheepGo",
-	"nameOnDisk" : "libGoSheepGo.dylib",
+	"name" : "my_test",
+	"nameOnDisk" : "my_test",
 	"paths" : 
 	{
-		"build" : "core_lib",
-		"source" : "core_lib"
+		"build" : "tests",
+		"source" : "tests"
 	},
 	"sourceGroups" : 
 	[
@@ -158,11 +173,11 @@
 	"sources" : 
 	[
 		{
-			"backtrace" : 1,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "core_lib/src/GoSheepGoProgram.cc",
+			"path" : "tests/test1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }

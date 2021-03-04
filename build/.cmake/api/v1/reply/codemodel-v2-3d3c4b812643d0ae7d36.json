@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"projectIndex" : 0,
 					"source" : ".",
@@ -26,22 +27,34 @@
 					[
 						1
 					]
+				},
+				{
+					"build" : "tests",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2
+					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
 					"directoryIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					],
 					"name" : "GoSheepGo",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -50,15 +63,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "GoSheep::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GoSheep-Debug-7fcaa2cc19bb7c966e7e.json",
+					"jsonFile" : "target-GoSheep-69f91a4c88ea863bc475.json",
 					"name" : "GoSheep",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "GoSheepGo::@736bc72213520368d6a2",
-					"jsonFile" : "target-GoSheepGo-Debug-d4a7c105c9785dc182bd.json",
+					"jsonFile" : "target-GoSheepGo-9f03b6ff0ed6351a4d30.json",
 					"name" : "GoSheepGo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "my_test::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-my_test-5bc9b8ad83b7f0aa5304.json",
+					"name" : "my_test",
 					"projectIndex" : 0
 				}
 			]

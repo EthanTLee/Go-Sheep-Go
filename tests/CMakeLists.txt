@@ -1,9 +1,10 @@
+find_package(Catch2 CONFIG REQUIRED)
+
+
 file(GLOB SRCS *.c *.cpp *.cc *.h *.hpp) 
 
 add_executable(my_test ${SRCS})
 
-target_link_libraries(${PROJECT_NAME} 
-    ${PROJECT_SOURCE_DIR}/extern/SDL2/libs/libSDL2.dylib
-    ${PROJECT_SOURCE_DIR}/extern/SDL2/libs/libSDL2_image.dylib
-)
 
+target_link_libraries(my_test PUBLIC ${PROJECT_NAME} )
+target_link_libraries(my_test PRIVATE Catch2::Catch2)

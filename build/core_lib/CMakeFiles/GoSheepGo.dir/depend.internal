@@ -3,6 +3,7 @@
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o
  ../core_lib/includes/GoSheepGo/GoSheepGo.hh
+ ../core_lib/includes/GoSheepGo/GoSheepHelpers.hh
  ../extern/SDL2/includes/SDL2/SDL.h
  ../extern/SDL2/includes/SDL2/SDL_assert.h
  ../extern/SDL2/includes/SDL2/SDL_atomic.h

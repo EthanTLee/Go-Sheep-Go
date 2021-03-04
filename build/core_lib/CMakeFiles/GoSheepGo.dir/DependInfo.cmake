@@ -18,6 +18,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../extern/SDL2/includes"
   "../core_lib/includes"
+  "/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include"
+  "/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2"
   )
 
 # Targets to which this target links.

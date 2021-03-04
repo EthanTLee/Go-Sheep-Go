@@ -79,15 +79,15 @@ include core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o: ../core_lib/src/GoSheepGoProgram.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc > CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.i
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc > CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.i
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc -o CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.s
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc -o CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.s
 
 # Object files for target GoSheepGo
 GoSheepGo_OBJECTS = \
@@ -98,8 +98,12 @@ GoSheepGo_EXTERNAL_OBJECTS =
 
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/build.make
-core_lib/libGoSheepGo.dylib: ../extern/SDL2/libs/libSDL2.dylib
-core_lib/libGoSheepGo.dylib: ../extern/SDL2/libs/libSDL2_image.dylib
+core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libSDL2maind.a
+core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libSDL2d.a
+core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libSDL2_image.a
+core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libSDL2d.a
+core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libpng16d.a
+core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libz.a
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libGoSheepGo.dylib"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GoSheepGo.dir/link.txt --verbose=$(VERBOSE)

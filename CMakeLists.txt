@@ -3,7 +3,7 @@ project(GoSheepGo)
 include_directories(extern/SDL2/includes/)
 
 add_subdirectory(core_lib)
-
+add_subdirectory(tests)
 
 add_executable(GoSheep main.cpp)
 
