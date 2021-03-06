@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../core_lib/includes/GoSheepGo/GoSheepGo.hh
+
+/Users/peepeepoopoo/projects/GoSheepGo/main.cpp
+iostream
+-
+vector
+-
+exception
+-
+GoSheepGo/GoSheepGo.hh
+/Users/peepeepoopoo/projects/GoSheepGo/GoSheepGo/GoSheepGo.hh
+

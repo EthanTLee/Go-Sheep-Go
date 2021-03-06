@@ -144,20 +144,32 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
-# target to build an object file
-test1.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.o
+test1.o: test1.cpp.o
+
 .PHONY : test1.o
 
-# target to preprocess a source file
-test1.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.i
+# target to build an object file
+test1.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.o
+.PHONY : test1.cpp.o
+
+test1.i: test1.cpp.i
+
 .PHONY : test1.i
 
-# target to generate assembly for a file
-test1.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.s
+# target to preprocess a source file
+test1.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.i
+.PHONY : test1.cpp.i
+
+test1.s: test1.cpp.s
+
 .PHONY : test1.s
+
+# target to generate assembly for a file
+test1.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.s
+.PHONY : test1.cpp.s
 
 # Help Target
 help:

@@ -144,20 +144,32 @@ GoSheepGo/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/build
 .PHONY : GoSheepGo/fast
 
-# target to build an object file
-src/GoSheepGoProgram.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o
+src/GoSheepGoProgram.o: src/GoSheepGoProgram.cc.o
+
 .PHONY : src/GoSheepGoProgram.o
 
-# target to preprocess a source file
-src/GoSheepGoProgram.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.i
+# target to build an object file
+src/GoSheepGoProgram.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.o
+.PHONY : src/GoSheepGoProgram.cc.o
+
+src/GoSheepGoProgram.i: src/GoSheepGoProgram.cc.i
+
 .PHONY : src/GoSheepGoProgram.i
 
-# target to generate assembly for a file
-src/GoSheepGoProgram.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.s
+# target to preprocess a source file
+src/GoSheepGoProgram.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.i
+.PHONY : src/GoSheepGoProgram.cc.i
+
+src/GoSheepGoProgram.s: src/GoSheepGoProgram.cc.s
+
 .PHONY : src/GoSheepGoProgram.s
+
+# target to generate assembly for a file
+src/GoSheepGoProgram.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.s
+.PHONY : src/GoSheepGoProgram.cc.s
 
 # Help Target
 help:

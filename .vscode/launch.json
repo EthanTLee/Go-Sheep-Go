@@ -8,7 +8,7 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/build/GoSheep",
+            "program": "${workspaceFolder}/build/GoSheep",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -16,6 +16,7 @@
             "externalConsole": false,
             "MIMode": "lldb"
         },
+
         {
             "name": "clang++ - Build and debug active file",
             "type": "cppdbg",

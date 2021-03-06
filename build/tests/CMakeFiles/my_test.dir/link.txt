@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/my_test.dir/test1.o -o my_test  ../core_lib/libGoSheepGo.dylib 
+/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/my_test.dir/test1.cpp.o -o my_test  ../core_lib/libGoSheepGo.dylib 

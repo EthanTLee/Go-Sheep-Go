@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.o"
+  "CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.o"
   "libGoSheepGo.dylib"
   "libGoSheepGo.pdb"
 )

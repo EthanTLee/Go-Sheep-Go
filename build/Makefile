@@ -168,20 +168,32 @@ my_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
-# target to build an object file
-main.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.o
+main.o: main.cpp.o
+
 .PHONY : main.o
 
-# target to preprocess a source file
-main.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.i
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
 .PHONY : main.i
 
-# target to generate assembly for a file
-main.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.s
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
 .PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoSheep.dir/build.make CMakeFiles/GoSheep.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:

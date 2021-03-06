@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test1.o"
+  "/Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -15,7 +15,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../extern/SDL2/includes"
   "../core_lib/includes"
   "/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include"
   )
