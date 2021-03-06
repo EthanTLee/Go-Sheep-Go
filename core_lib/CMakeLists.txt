@@ -9,7 +9,7 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
     #${PROJECT_SOURCE_DIR}/extern/SDL2/libs/libSDL2_image.dylib
 #)
 
-target_include_directories( ${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/includes/ )
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/includes/ )
 
 
 target_compile_definitions(${PROJECT_NAME}  PUBLIC ${PROJECT_NAME})
