@@ -171,6 +171,33 @@ test1.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.s
 .PHONY : test1.cpp.s
 
+test_tile.o: test_tile.cpp.o
+
+.PHONY : test_tile.o
+
+# target to build an object file
+test_tile.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tile.cpp.o
+.PHONY : test_tile.cpp.o
+
+test_tile.i: test_tile.cpp.i
+
+.PHONY : test_tile.i
+
+# target to preprocess a source file
+test_tile.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tile.cpp.i
+.PHONY : test_tile.cpp.i
+
+test_tile.s: test_tile.cpp.s
+
+.PHONY : test_tile.s
+
+# target to generate assembly for a file
+test_tile.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tile.cpp.s
+.PHONY : test_tile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -183,6 +210,9 @@ help:
 	@echo "... test1.o"
 	@echo "... test1.i"
 	@echo "... test1.s"
+	@echo "... test_tile.o"
+	@echo "... test_tile.i"
+	@echo "... test_tile.s"
 .PHONY : help
 
 

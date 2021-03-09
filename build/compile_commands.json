@@ -13,5 +13,10 @@
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
   "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test1.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp",
   "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_tile.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_tile.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_tile.cpp"
 }
 ]

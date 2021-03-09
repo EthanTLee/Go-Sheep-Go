@@ -8,16 +8,7 @@
 
 using namespace gosheep;
 
-SDL_Rect CreateRect (int x, int y, int w, int h)
-{
-    SDL_Rect ret;
-    ret.x = x;
-    ret.y = y;
-    ret.w = w;
-    ret.h = h;
 
-    return ret;
-}
 
 
 
