@@ -9,10 +9,6 @@
 using namespace gosheep;
 
 
-
-
-
-
 void program(int argc, char* argv[]){
 
     SDL_Init(SDL_INIT_VIDEO);

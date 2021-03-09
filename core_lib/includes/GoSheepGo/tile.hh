@@ -5,6 +5,7 @@
 #include <SDL2/SDL_image.h>
 #include <vector>
 #include <string>
+#include <exception>
 
 namespace gosheep {
 
@@ -40,8 +41,17 @@ namespace gosheep {
         pixelpt pixelcoord;
         SDL_Rect rect;
 
-        void blit() {
-            
+        void blit(std::string reg_or_sel) {
+            if (reg_or_sel == "reg") {
+                SDL_BlitSurface(gfx, );
+            }
+            else if (reg_or_sel == "sel") {
+                SDL_BlitSurface(sel_gfx, NULL, );
+            }
+            else {
+                throw std::runtime_error("must choose reg or sel");
+            } 
+                
         }
 
     };
