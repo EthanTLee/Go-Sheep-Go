@@ -1,18 +1,21 @@
 #include <catch.hpp>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include "GoSheepGo/GoSheepHelpers.hh"
 #include "GoSheepGo/tile.hh"
 
-int test_tile_number[2];
-int test_tile_shape[2];
-int test_tile_offset[2];
+using namespace gosheep;
+
+gridpt test_tile_number;
+sizept test_tile_shape;
 SDL_Surface*  test_tile_gfx = IMG_Load("../../res/grass.png");
 SDL_Surface* test_tile_sel_gfx = IMG_Load("../../res/grass_sel.png");
+SDL_Surface* test_window_surf
+
 
 Tile tile(
     test_tile_number, 
     test_tile_shape,
-    test_tile_offset, 
     test_tile_gfx,
     test_tile_sel_gfx
 );
