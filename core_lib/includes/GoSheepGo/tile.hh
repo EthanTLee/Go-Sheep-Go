@@ -21,17 +21,12 @@ namespace gosheep {
         ) {
             
             gridcoord = tile_number;
-            
             shape = tile_shape;
-
             gfx = tile_gfx;
-
             sel_gfx = tile_sel_gfx;
-
             window_surf = dest_window_surf;
-
+            
             pixelcoord = convert_grid_to_pixel(gridcoord, shape);
-
             rect = CreateRect(pixelcoord, shape);
 
         }
@@ -41,7 +36,6 @@ namespace gosheep {
         SDL_Surface* gfx = nullptr;
         SDL_Surface* sel_gfx = nullptr;
         SDL_Surface* window_surf = nullptr;
-
         pixelpt pixelcoord;
         SDL_Rect rect;
 

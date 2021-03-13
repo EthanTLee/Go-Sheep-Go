@@ -1,7 +1,10 @@
 {
     "files.associations": {
         "optional": "cpp",
-        "exception": "cpp"
+        "exception": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     },
     "cmake.configureSettings": {
         "CMAKE_TOOLCHAIN_FILE": "/Users/peepeepoopoo/projects/vcpkg/scripts/buildsystems/vcpkg.cmake"

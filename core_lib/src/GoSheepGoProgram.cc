@@ -24,14 +24,14 @@ using namespace gosheep;
 //    );
 
 
-    SDL_Surface * window_surface = SDL_GetWindowSurface(window);
+//    SDL_Surface * window_surface = SDL_GetWindowSurface(window);
     
-    SDL_FillRect(window_surface, NULL, SDL_MapRGB (window_surface -> format, 0x00, 0x00, 0xF0));
-    SDL_UpdateWindowSurface(window);
+//    SDL_FillRect(window_surface, NULL, SDL_MapRGB (window_surface -> format, 0x00, 0x00, 0xF0));
+//    SDL_UpdateWindowSurface(window);
 
 
-    __not_null__ <SDL_Surface *> g_grass = IMG_Load("../res/grass.png");
-    __not_null__ <SDL_Surface *> g_grass_sel = IMG_Load("../res/grass_sel.png");
+//    __not_null__ <SDL_Surface *> g_grass = IMG_Load("../res/grass.png");
+//    __not_null__ <SDL_Surface *> g_grass_sel = IMG_Load("../res/grass_sel.png");
     
     const int MAP_SHAPE[2] = {2,5};
     const int TILE_SHAPE[2] = {99,45};

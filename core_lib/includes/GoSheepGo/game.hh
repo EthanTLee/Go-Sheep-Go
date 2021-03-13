@@ -30,6 +30,12 @@ namespace gosheep {
 
             window_surface = SDL_GetWindowSurface(window);
             SDL_UpdateWindowSurface(window);
+            SDL_FillRect(window_surface, NULL, SDL_MapRGB (window_surface -> format, 0x00, 0x00, 0xF0));
+            SDL_UpdateWindowSurface(window);
+        }
+
+        void load_images() {
+
         }
 
         void start_gameloop(){

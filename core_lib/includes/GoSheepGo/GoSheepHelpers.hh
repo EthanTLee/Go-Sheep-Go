@@ -2,6 +2,7 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <vector>
 #include <exception>
 
 namespace gosheep {
@@ -15,6 +16,7 @@ namespace gosheep {
     struct gridpt : public point {};
 
     struct sizept : public pixelpt {};
+
 
 
     template <typename T>
