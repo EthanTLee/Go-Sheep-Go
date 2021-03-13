@@ -2,53 +2,67 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include "GoSheepGo/GoSheepHelpers.hh"
+#include "GoSheepGo/game.hh"
 #include "GoSheepGo/tile.hh"
 
 using namespace gosheep;
 
-gridpt test_tile_number;
-sizept test_tile_shape;
-SDL_Surface*  test_tile_gfx = IMG_Load("../../res/grass.png");
-SDL_Surface* test_tile_sel_gfx = IMG_Load("../../res/grass_sel.png");
-SDL_Surface* test_window_surf
 
 
-Tile tile(
-    test_tile_number, 
-    test_tile_shape,
-    test_tile_gfx,
-    test_tile_sel_gfx
-);
 
-TEST_CASE( "tile constructor testing", "tile") {
 
-    REQUIRE(tile.number == test_tile_number);
+TEST_CASE( "tile testing", "tile") {
 
-    REQUIRE(tile.shape == test_tile_shape);
 
-    REQUIRE(tile.offset == test_tile_offset);
+    Game game;
+    game.make_window();
 
-    REQUIRE(tile.gfx == test_tile_gfx);
+    gridpt test_tile_gridcoord;
+    sizept test_tile_shape;
+    __not_null__ <SDL_Surface *>  test_tile_gfx = IMG_Load("../../res/grass.png");
+    __not_null__ <SDL_Surface *> test_tile_sel_gfx = IMG_Load("../../res/grass_sel.png");
 
-    REQUIRE(tile.sel_gfx == test_tile_sel_gfx);
-}
-
-TEST_CASE( "tile position testing", "tile") {
-
-    REQUIRE(tile.pos.x 
-        == test_tile_offset[0]  
-        + (test_tile_number[1] * test_tile_shape[0]/2)
-        + (test_tile_number[0] * test_tile_shape[0]/2)
-    );
-    
-    REQUIRE(tile.pos.y
-        == test_tile_offset[1]
-        + (test_tile_number[1] * test_tile_shape[1]/2)
-        - (test_tile_number[0] * test_tile_shape[1]/2)
+    Tile tile(
+        test_tile_gridcoord, 
+        test_tile_shape,
+        test_tile_gfx.m_ptr,
+        test_tile_sel_gfx.m_ptr,
+        game.window_surface
     );
 
-    REQUIRE(tile.pos.w == test_tile_shape[0]);
-    
-    REQUIRE(tile.pos.h == test_tile_shape[1]);
-}
+    REQUIRE(tile.gridcoord.x == test_tile_gridcoord.x);
 
+
+    //Constructors
+
+    REQUIRE(tile.gridcoord.x == test_tile_gridcoord.x);
+    REQUIRE(tile.gridcoord.y == test_tile_gridcoord.y);
+
+    REQUIRE(tile.shape.x == test_tile_shape.x);
+    REQUIRE(tile.shape.y == test_tile_shape.y);
+
+    REQUIRE(tile.gfx == test_tile_gfx.m_ptr);
+    REQUIRE(tile.sel_gfx == test_tile_sel_gfx.m_ptr);
+
+    //REQUIRE(tile.window_surf == test_window_surf);
+
+
+    //Rect
+
+    REQUIRE(tile.rect.x 
+        == 100  
+        + (test_tile_gridcoord.y * test_tile_shape.x/2)
+        + (test_tile_gridcoord.x * test_tile_shape.x/2)
+    );
+
+    REQUIRE(tile.rect.y
+        == 100
+        + (test_tile_gridcoord.y * test_tile_shape.y/2)
+        - (test_tile_gridcoord.x * test_tile_shape.y/2)
+    );
+
+    REQUIRE(tile.rect.w == test_tile_shape.x);
+
+    REQUIRE(tile.rect.h == test_tile_shape.y);
+
+}

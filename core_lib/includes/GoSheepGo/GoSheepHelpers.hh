@@ -1,7 +1,10 @@
 #pragma once
 
-namespace gosheep {
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <exception>
 
+namespace gosheep {
 
     struct point {
         int x= 0, y=0;
@@ -27,7 +30,7 @@ namespace gosheep {
     };
 
 
-    pixelpt convert_grid_to_pixel( gridpt gridcoord, sizept tileshape) {
+    inline pixelpt convert_grid_to_pixel( gridpt gridcoord, sizept tileshape) {
         const int X_OFFSET = 100;
         const int Y_OFFSET = 100;
 
@@ -45,7 +48,7 @@ namespace gosheep {
     }
 
 
-    SDL_Rect CreateRect (pixelpt position, sizept size) {
+ inline   SDL_Rect CreateRect (pixelpt position, sizept size) {
         SDL_Rect ret;
         ret.x = position.x;
         ret.y = position.y;

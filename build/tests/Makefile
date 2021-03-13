@@ -144,32 +144,32 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
-test1.o: test1.cpp.o
+test_test.o: test_test.cpp.o
 
-.PHONY : test1.o
+.PHONY : test_test.o
 
 # target to build an object file
-test1.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.o
-.PHONY : test1.cpp.o
+test_test.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_test.cpp.o
+.PHONY : test_test.cpp.o
 
-test1.i: test1.cpp.i
+test_test.i: test_test.cpp.i
 
-.PHONY : test1.i
+.PHONY : test_test.i
 
 # target to preprocess a source file
-test1.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.i
-.PHONY : test1.cpp.i
+test_test.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_test.cpp.i
+.PHONY : test_test.cpp.i
 
-test1.s: test1.cpp.s
+test_test.s: test_test.cpp.s
 
-.PHONY : test1.s
+.PHONY : test_test.s
 
 # target to generate assembly for a file
-test1.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test1.cpp.s
-.PHONY : test1.cpp.s
+test_test.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_test.cpp.s
+.PHONY : test_test.cpp.s
 
 test_tile.o: test_tile.cpp.o
 
@@ -207,9 +207,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
-	@echo "... test1.o"
-	@echo "... test1.i"
-	@echo "... test1.s"
+	@echo "... test_test.o"
+	@echo "... test_test.i"
+	@echo "... test_test.s"
 	@echo "... test_tile.o"
 	@echo "... test_tile.i"
 	@echo "... test_tile.s"

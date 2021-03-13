@@ -1,7 +1,5 @@
-find_package(Catch2 CONFIG REQUIRED)
-
-
 file(GLOB SRCS *.c *.cpp *.cc *.h *.hpp) 
+find_package(Catch2 CONFIG REQUIRED)
 
 add_executable(my_test ${SRCS})
 

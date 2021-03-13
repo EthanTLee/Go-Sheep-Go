@@ -9,15 +9,15 @@ namespace gosheep {
     class Game {
         public:
 
-        Game() {}
+        Game() {
+            SDL_Init(SDL_INIT_VIDEO);
+            IMG_Init(IMG_INIT_PNG);
+        }
 
         SDL_Window* window = nullptr;
         SDL_Surface* window_surface = nullptr;
 
-        void make_window(int argc, char* argv[]) {
-
-            SDL_Init(SDL_INIT_VIDEO);
-            IMG_Init(IMG_INIT_PNG);
+        void make_window() {
 
             window = SDL_CreateWindow(
                 "Go Sheep Go",
@@ -29,10 +29,10 @@ namespace gosheep {
             );
 
             window_surface = SDL_GetWindowSurface(window);
-
+            SDL_UpdateWindowSurface(window);
         }
 
-        void start_gameloop(int argc, char* argv[]){
+        void start_gameloop(){
             bool quit = false;
             SDL_Event e;
         }

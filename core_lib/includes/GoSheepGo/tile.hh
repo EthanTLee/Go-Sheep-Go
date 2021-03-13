@@ -17,7 +17,7 @@ namespace gosheep {
             sizept tile_shape,
             SDL_Surface* tile_gfx,
             SDL_Surface* tile_sel_gfx, 
-            SDL_Surface* window_surf
+            SDL_Surface* dest_window_surf
         ) {
             
             gridcoord = tile_number;
@@ -28,7 +28,7 @@ namespace gosheep {
 
             sel_gfx = tile_sel_gfx;
 
-            window = window_surf;
+            window_surf = dest_window_surf;
 
             pixelcoord = convert_grid_to_pixel(gridcoord, shape);
 
@@ -40,17 +40,17 @@ namespace gosheep {
         sizept shape;
         SDL_Surface* gfx = nullptr;
         SDL_Surface* sel_gfx = nullptr;
-        SDL_Surface* window = nullptr;
+        SDL_Surface* window_surf = nullptr;
 
         pixelpt pixelcoord;
         SDL_Rect rect;
 
         void blit(std::string reg_or_sel) {
             if (reg_or_sel == "reg") {
-                SDL_BlitSurface(gfx, NULL, window, &rect);
+                SDL_BlitSurface(gfx, NULL, window_surf, &rect);
             }
             else if (reg_or_sel == "sel") {
-                SDL_BlitSurface(sel_gfx, NULL, window, &rect);
+                SDL_BlitSurface(sel_gfx, NULL, window_surf, &rect);
             }
             else {
                 throw std::runtime_error("must choose reg or sel");

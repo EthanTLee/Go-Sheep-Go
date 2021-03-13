@@ -76,18 +76,18 @@ include tests/CMakeFiles/my_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/my_test.dir/flags.make
 
-tests/CMakeFiles/my_test.dir/test1.cpp.o: tests/CMakeFiles/my_test.dir/flags.make
-tests/CMakeFiles/my_test.dir/test1.cpp.o: ../tests/test1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/my_test.dir/test1.cpp.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_test.dir/test1.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp
+tests/CMakeFiles/my_test.dir/test_test.cpp.o: tests/CMakeFiles/my_test.dir/flags.make
+tests/CMakeFiles/my_test.dir/test_test.cpp.o: ../tests/test_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/my_test.dir/test_test.cpp.o"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_test.dir/test_test.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp
 
-tests/CMakeFiles/my_test.dir/test1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_test.dir/test1.cpp.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp > CMakeFiles/my_test.dir/test1.cpp.i
+tests/CMakeFiles/my_test.dir/test_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_test.dir/test_test.cpp.i"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp > CMakeFiles/my_test.dir/test_test.cpp.i
 
-tests/CMakeFiles/my_test.dir/test1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_test.dir/test1.cpp.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/tests/test1.cpp -o CMakeFiles/my_test.dir/test1.cpp.s
+tests/CMakeFiles/my_test.dir/test_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_test.dir/test_test.cpp.s"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp -o CMakeFiles/my_test.dir/test_test.cpp.s
 
 tests/CMakeFiles/my_test.dir/test_tile.cpp.o: tests/CMakeFiles/my_test.dir/flags.make
 tests/CMakeFiles/my_test.dir/test_tile.cpp.o: ../tests/test_tile.cpp
@@ -104,13 +104,13 @@ tests/CMakeFiles/my_test.dir/test_tile.cpp.s: cmake_force
 
 # Object files for target my_test
 my_test_OBJECTS = \
-"CMakeFiles/my_test.dir/test1.cpp.o" \
+"CMakeFiles/my_test.dir/test_test.cpp.o" \
 "CMakeFiles/my_test.dir/test_tile.cpp.o"
 
 # External object files for target my_test
 my_test_EXTERNAL_OBJECTS =
 
-tests/my_test: tests/CMakeFiles/my_test.dir/test1.cpp.o
+tests/my_test: tests/CMakeFiles/my_test.dir/test_test.cpp.o
 tests/my_test: tests/CMakeFiles/my_test.dir/test_tile.cpp.o
 tests/my_test: tests/CMakeFiles/my_test.dir/build.make
 tests/my_test: core_lib/libGoSheepGo.dylib

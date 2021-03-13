@@ -9,19 +9,19 @@
 using namespace gosheep;
 
 
-void program(int argc, char* argv[]){
-
-    SDL_Init(SDL_INIT_VIDEO);
-    IMG_Init(IMG_INIT_PNG);
-
-    auto window = SDL_CreateWindow(
-        "Go Sheep Go",
-        SDL_WINDOWPOS_UNDEFINED,
-        SDL_WINDOWPOS_UNDEFINED,
-        640,
-        480,
-        SDL_WINDOW_SHOWN
-    );
+//void program(int argc, char* argv[]){
+//
+//    SDL_Init(SDL_INIT_VIDEO);
+//    IMG_Init(IMG_INIT_PNG);
+//
+//    auto window = SDL_CreateWindow(
+//        "Go Sheep Go",
+//        SDL_WINDOWPOS_UNDEFINED,
+//        SDL_WINDOWPOS_UNDEFINED,
+//        640,
+//        480,
+//        SDL_WINDOW_SHOWN
+//    );
 
 
     SDL_Surface * window_surface = SDL_GetWindowSurface(window);
@@ -39,12 +39,11 @@ void program(int argc, char* argv[]){
     const int X_OFFSET = 100;
     const int Y_OFFSET = 100;
 
-
     std::vector <std::vector<SDL_Rect> > grass_pos(MAP_SHAPE[0]);
 
     for (int row_count = 0; row_count < MAP_SHAPE[0]; row_count++) {
         for (int col_count = 0; col_count < MAP_SHAPE[1]; col_count++) {
-
+/*
             grass_pos[row_count].push_back( CreateRect(
                 // x
                 X_OFFSET + (col_count * TILE_SHAPE[0]/2) + (row_count * TILE_SHAPE[0]/2),
@@ -55,6 +54,7 @@ void program(int argc, char* argv[]){
                 //h
                 TILE_SHAPE[1]
             )); 
+            */
         }
     }
 
