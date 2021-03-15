@@ -33,16 +33,16 @@ using namespace gosheep;
 //    __not_null__ <SDL_Surface *> g_grass = IMG_Load("../res/grass.png");
 //    __not_null__ <SDL_Surface *> g_grass_sel = IMG_Load("../res/grass_sel.png");
     
-    const int MAP_SHAPE[2] = {2,5};
-    const int TILE_SHAPE[2] = {99,45};
-    const int NUMBER_OF_TILES = MAP_SHAPE[0]*MAP_SHAPE[1];
-    const int X_OFFSET = 100;
-    const int Y_OFFSET = 100;
+//    const int MAP_SHAPE[2] = {2,5};
+//    const int TILE_SHAPE[2] = {99,45};
+//    const int NUMBER_OF_TILES = MAP_SHAPE[0]*MAP_SHAPE[1];
+//    const int X_OFFSET = 100;
+//    const int Y_OFFSET = 100;
 
-    std::vector <std::vector<SDL_Rect> > grass_pos(MAP_SHAPE[0]);
+//    std::vector <std::vector<SDL_Rect> > grass_pos(MAP_SHAPE[0]);
 
-    for (int row_count = 0; row_count < MAP_SHAPE[0]; row_count++) {
-        for (int col_count = 0; col_count < MAP_SHAPE[1]; col_count++) {
+//    for (int row_count = 0; row_count < MAP_SHAPE[0]; row_count++) {
+//        for (int col_count = 0; col_count < MAP_SHAPE[1]; col_count++) {
 /*
             grass_pos[row_count].push_back( CreateRect(
                 // x
@@ -55,8 +55,8 @@ using namespace gosheep;
                 TILE_SHAPE[1]
             )); 
             */
-        }
-    }
+//        }
+//    }
 
     int sel[2] = {0,0};
     bool quit = false;

@@ -16,6 +16,7 @@ namespace gosheep {
 
         SDL_Window* window = nullptr;
         SDL_Surface* window_surface = nullptr;
+        SDL_Event e;
 
         void make_window() {
 
@@ -34,13 +35,16 @@ namespace gosheep {
             SDL_UpdateWindowSurface(window);
         }
 
-        void load_images() {
-
-        }
-
         void start_gameloop(){
             bool quit = false;
-            SDL_Event e;
+            while (!quit) {
+                while (SDL_PollEvent(&e) != 0) {
+                    if (e.type == SDL_QUIT) {
+                        quit = true;
+                    }
+                    else if
+                }
+            }
         }
     };
 }

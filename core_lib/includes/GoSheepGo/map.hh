@@ -3,6 +3,7 @@
 #include <GoSheepGo/GoSheepHelpers.hh>
 #include <GoSheepGo/tile.hh>
 #include <vector>
+#include <iterator>
 #include <exception>
 #include <string>
 
@@ -30,25 +31,45 @@ namespace gosheep {
                     gridpt tile_number;
                     tile_number.x = x;
                     tile_number.y = y;
+
                     sizept tile_size;                
                     tile_size.x = single_tile_size.x;
                     tile_size.y = single_tile_size.y;
 
-                    Tile tile(
+            
+                    tile_vector.push_back( Tile(
                         tile_number, 
                         tile_size,
                         g_grass.m_ptr,
                         g_grass_sel.m_ptr,
                         dest_window_surf
-                    )
-
-                    tile_vector.push_back(tile);
+                    ));
                 }
             }
         }
 
         gridpt size;
-        std::vector < std::vector <Tile> > tile_vector;
-        
+        std::vector <Tile> tile_vector;
+        std::vector <Tile>::iterator tile_iterator;
+
+        void draw_map(gridpt sel_tile_coord) {
+            for (
+                tile_iterator = tile_vector.begin(); 
+                tile_iterator != tile_vector.end(); 
+                tile_iterator++
+            ) {
+                if(
+                    tile_iterator->gridcoord.x == sel_tile_coord.x 
+                    && tile_iterator->gridcoord.y == sel_tile_coord.y) {
+                    tile_iterator->blit("sel");
+                }
+                else {
+                    tile_iterator -> blit("reg");
+                }
+                
+            }
+
+        }
+
     };
 }
