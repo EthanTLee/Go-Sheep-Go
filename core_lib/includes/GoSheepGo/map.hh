@@ -9,9 +9,9 @@
 
 namespace gosheep {
 
-
     class Tilemap {
         public:
+
         Tilemap(
             gridpt map_size,
             sizept single_tile_size, 
@@ -20,7 +20,7 @@ namespace gosheep {
             SDL_Surface* dest_window_surf
         ) {
             
-            size = map_size;
+            m_size = map_size;
 
             __not_null__ <SDL_Surface *> g_grass = IMG_Load(tile_gfx_path.c_str());
             __not_null__ <SDL_Surface *> g_grass_sel = IMG_Load(tile_sel_gfx_path.c_str());
@@ -37,7 +37,7 @@ namespace gosheep {
                     tile_size.y = single_tile_size.y;
 
             
-                    tile_vector.push_back( Tile(
+                    m_tile_vector.push_back( Tile(
                         tile_number, 
                         tile_size,
                         g_grass.m_ptr,
@@ -48,28 +48,26 @@ namespace gosheep {
             }
         }
 
-        gridpt size;
-        std::vector <Tile> tile_vector;
-        std::vector <Tile>::iterator tile_iterator;
+        gridpt m_size;
+        std::vector <Tile> m_tile_vector;
+        std::vector <Tile>::iterator m_tile_iterator;
 
         void draw_map(gridpt sel_tile_coord) {
             for (
-                tile_iterator = tile_vector.begin(); 
-                tile_iterator != tile_vector.end(); 
-                tile_iterator++
+                m_tile_iterator = m_tile_vector.begin(); 
+                m_tile_iterator != m_tile_vector.end(); 
+                m_tile_iterator++
             ) {
                 if(
-                    tile_iterator->gridcoord.x == sel_tile_coord.x 
-                    && tile_iterator->gridcoord.y == sel_tile_coord.y) {
-                    tile_iterator->blit("sel");
+                    m_tile_iterator->gridcoord.x == sel_tile_coord.x 
+                    && m_tile_iterator->gridcoord.y == sel_tile_coord.y) {
+                    m_tile_iterator->blit("sel");
                 }
                 else {
-                    tile_iterator -> blit("reg");
+                    m_tile_iterator -> blit("reg");
                 }
                 
             }
-
         }
-
     };
 }
