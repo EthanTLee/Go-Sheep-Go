@@ -9,65 +9,52 @@
 
 namespace gosheep {
 
-    class Tilemap {
+    class Map {
         public:
 
-        Tilemap(
+        Map(
             gridpt map_size,
-            sizept single_tile_size, 
-            std::string tile_gfx_path, 
-            std::string tile_sel_gfx_path,
             SDL_Surface* dest_window_surf
         ) {
             
             m_size = map_size;
 
-            __not_null__ <SDL_Surface *> g_grass = IMG_Load(tile_gfx_path.c_str());
-            __not_null__ <SDL_Surface *> g_grass_sel = IMG_Load(tile_sel_gfx_path.c_str());
 
-            for (int x; x < map_size.x; x++) {
-                for (int y; y < map_size.y; y++) {
 
-                    gridpt tile_number;
-                    tile_number.x = x;
-                    tile_number.y = y;
 
-                    sizept tile_size;                
-                    tile_size.x = single_tile_size.x;
-                    tile_size.y = single_tile_size.y;
-
-            
-                    m_tile_vector.push_back( Tile(
-                        tile_number, 
-                        tile_size,
-                        g_grass.m_ptr,
-                        g_grass_sel.m_ptr,
-                        dest_window_surf
-                    ));
-                }
-            }
         }
 
         gridpt m_size;
-        std::vector <Tile> m_tile_vector;
-        std::vector <Tile>::iterator m_tile_iterator;
 
-        void draw_map(gridpt sel_tile_coord) {
-            for (
-                m_tile_iterator = m_tile_vector.begin(); 
-                m_tile_iterator != m_tile_vector.end(); 
-                m_tile_iterator++
-            ) {
-                if(
-                    m_tile_iterator->gridcoord.x == sel_tile_coord.x 
-                    && m_tile_iterator->gridcoord.y == sel_tile_coord.y) {
-                    m_tile_iterator->blit("sel");
-                }
-                else {
-                    m_tile_iterator -> blit("reg");
-                }
-                
-            }
+        Maplayer <Tile> m_tile_layer;
+        Maplayer <Sheep> m_sheep_layer;
+
+        std::vector <SDL_Surface*> m_graphics; 
+
+        gridpt sel_tile_coord;
+
+        void init() {
+            m_graphics = load_graphics();
+            m_tile_layer.init();
+            m_sheep_layer.init();
+        }
+
+
+        void update() {
+            m_tile_layer.update();
+            m_sheep_layer.update();
+        }
+
+        void draw() {
+            m_tile_layer.draw();
+            m_sheep_layer.draw();
+        }
+
+        std::vector <SDL_Surface*> load_graphics() {
+            __not_null__ <SDL_Surface *> g_grass = IMG_Load("../res/grass.png"); 
+            __not_null__ <SDL_Surface *> g_grass_sel = IMG_Load("../res/grass_sel.png");
+            std::vector <SDL_Surface *> ret = {g_grass.m_ptr, g_grass_sel.m_ptr};
+            return ret;
         }
     };
 }

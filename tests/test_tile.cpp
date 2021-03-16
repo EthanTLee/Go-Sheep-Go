@@ -27,42 +27,42 @@ TEST_CASE( "tile testing", "tile") {
         test_tile_shape,
         test_tile_gfx.m_ptr,
         test_tile_sel_gfx.m_ptr,
-        game.window_surface
+        game.m_window_surface
     );
 
-    REQUIRE(tile.gridcoord.x == test_tile_gridcoord.x);
+    REQUIRE(tile.m_gridcoord.x == test_tile_gridcoord.x);
 
 
     //Constructors
 
-    REQUIRE(tile.gridcoord.x == test_tile_gridcoord.x);
-    REQUIRE(tile.gridcoord.y == test_tile_gridcoord.y);
+    REQUIRE(tile.m_gridcoord.x == test_tile_gridcoord.x);
+    REQUIRE(tile.m_gridcoord.y == test_tile_gridcoord.y);
 
-    REQUIRE(tile.shape.x == test_tile_shape.x);
-    REQUIRE(tile.shape.y == test_tile_shape.y);
+    REQUIRE(tile.m_shape.x == test_tile_shape.x);
+    REQUIRE(tile.m_shape.y == test_tile_shape.y);
 
-    REQUIRE(tile.gfx == test_tile_gfx.m_ptr);
-    REQUIRE(tile.sel_gfx == test_tile_sel_gfx.m_ptr);
+    REQUIRE(tile.m_gfx == test_tile_gfx.m_ptr);
+    REQUIRE(tile.m_sel_gfx == test_tile_sel_gfx.m_ptr);
 
-    //REQUIRE(tile.window_surf == test_window_surf);
+    //REQUIRE(tile.m_window_surf == test_window_surf);
 
 
-    //Rect
+    //m_rect
 
-    REQUIRE(tile.rect.x 
+    REQUIRE(tile.m_rect.x 
         == 100  
         + (test_tile_gridcoord.y * test_tile_shape.x/2)
         + (test_tile_gridcoord.x * test_tile_shape.x/2)
     );
 
-    REQUIRE(tile.rect.y
+    REQUIRE(tile.m_rect.y
         == 100
         + (test_tile_gridcoord.y * test_tile_shape.y/2)
         - (test_tile_gridcoord.x * test_tile_shape.y/2)
     );
 
-    REQUIRE(tile.rect.w == test_tile_shape.x);
+    REQUIRE(tile.m_rect.w == test_tile_shape.x);
 
-    REQUIRE(tile.rect.h == test_tile_shape.y);
+    REQUIRE(tile.m_rect.h == test_tile_shape.y);
 
 }

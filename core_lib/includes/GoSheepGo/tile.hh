@@ -18,37 +18,51 @@ namespace gosheep {
             SDL_Surface* tile_gfx,
             SDL_Surface* tile_sel_gfx, 
             SDL_Surface* dest_window_surf
-        ) {
-            
-            gridcoord = tile_number;
-            shape = tile_shape;
-            gfx = tile_gfx;
-            sel_gfx = tile_sel_gfx;
-            window_surf = dest_window_surf;
-            
-            pixelcoord = convert_grid_to_pixel(gridcoord, shape);
-            rect = CreateRect(pixelcoord, shape);
-
+        ) {  
+            init( 
+                tile_number, 
+                tile_shape, 
+                tile_gfx, 
+                tile_sel_gfx, 
+                dest_window_surf
+            );
         }
 
-        gridpt gridcoord;
-        sizept shape;
-        SDL_Surface* gfx = nullptr;
-        SDL_Surface* sel_gfx = nullptr;
-        SDL_Surface* window_surf = nullptr;
-        pixelpt pixelcoord;
-        SDL_Rect rect;
+        gridpt m_gridcoord;
+        sizept m_shape;
+        SDL_Surface* m_gfx = nullptr;
+        SDL_Surface* m_sel_gfx = nullptr;
+        SDL_Surface* m_window_surf = nullptr;
+        pixelpt m_pixelcoord;
+        SDL_Rect m_rect;
+        bool sel;
 
-        void blit(std::string reg_or_sel) {
-            if (reg_or_sel == "reg") {
-                SDL_BlitSurface(gfx, NULL, window_surf, &rect);
-            }
-            else if (reg_or_sel == "sel") {
-                SDL_BlitSurface(sel_gfx, NULL, window_surf, &rect);
+        void init(
+            gridpt tile_number,
+            sizept tile_shape,
+            SDL_Surface* tile_gfx,
+            SDL_Surface* tile_sel_gfx, 
+            SDL_Surface* dest_window_surf
+        ) {
+            m_gridcoord = tile_number;
+            m_shape = tile_shape;
+            m_gfx = tile_gfx;
+            m_sel_gfx = tile_sel_gfx;
+            m_window_surf = dest_window_surf;
+            
+            m_pixelcoord = convert_grid_to_pixel(m_gridcoord, m_shape);
+            m_rect = CreateRect(m_pixelcoord, m_shape);
+        }
+
+        void update(){}
+
+        void draw() {
+            if (!sel) {
+                SDL_BlitSurface(m_gfx, NULL, m_window_surf, &m_rect);
             }
             else {
-                throw std::runtime_error("must choose reg or sel");
-            } 
+                SDL_BlitSurface(m_sel_gfx, NULL, m_window_surf, &m_rect);
+            }
         }
         
     };
