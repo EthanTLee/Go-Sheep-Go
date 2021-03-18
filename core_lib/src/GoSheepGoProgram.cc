@@ -1,4 +1,4 @@
-#include <SDL2/SDL.h>
+/*#include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <iostream>
 #include <vector>
@@ -43,7 +43,7 @@ using namespace gosheep;
 
 //    for (int row_count = 0; row_count < MAP_SHAPE[0]; row_count++) {
 //        for (int col_count = 0; col_count < MAP_SHAPE[1]; col_count++) {
-/*
+
             grass_pos[row_count].push_back( CreateRect(
                 // x
                 X_OFFSET + (col_count * TILE_SHAPE[0]/2) + (row_count * TILE_SHAPE[0]/2),
@@ -54,11 +54,11 @@ using namespace gosheep;
                 //h
                 TILE_SHAPE[1]
             )); 
-            */
+            
 //        }
 //    }
 
-    int sel[2] = {0,0};
+//    int sel[2] = {0,0};
     bool quit = false;
     SDL_Event e;
     while (!quit)
@@ -110,3 +110,5 @@ using namespace gosheep;
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
+
+*/

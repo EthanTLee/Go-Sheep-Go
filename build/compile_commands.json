@@ -10,13 +10,28 @@
   "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GoSheepGoProgram.cc"
 },
 {
-  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_test.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp"
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
+  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++17 -o CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Test_Graphic.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Test_Graphic.cpp"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
+  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++17 -o CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/gameboarddrawertest.cc",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/gameboarddrawertest.cc"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
+  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++17 -o CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/gameboardtest.cc",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/gameboardtest.cc"
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_tile.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_tile.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_tile.cpp"
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/Test_Graphic.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/Test_Graphic.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/Test_Graphic.cpp"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_test.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_test.cpp"
 }
 ]

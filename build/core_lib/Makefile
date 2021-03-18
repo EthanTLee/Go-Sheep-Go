@@ -171,6 +171,87 @@ src/GoSheepGoProgram.cc.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.s
 .PHONY : src/GoSheepGoProgram.cc.s
 
+src/Test_Graphic.o: src/Test_Graphic.cpp.o
+
+.PHONY : src/Test_Graphic.o
+
+# target to build an object file
+src/Test_Graphic.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.o
+.PHONY : src/Test_Graphic.cpp.o
+
+src/Test_Graphic.i: src/Test_Graphic.cpp.i
+
+.PHONY : src/Test_Graphic.i
+
+# target to preprocess a source file
+src/Test_Graphic.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.i
+.PHONY : src/Test_Graphic.cpp.i
+
+src/Test_Graphic.s: src/Test_Graphic.cpp.s
+
+.PHONY : src/Test_Graphic.s
+
+# target to generate assembly for a file
+src/Test_Graphic.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.s
+.PHONY : src/Test_Graphic.cpp.s
+
+src/gameboarddrawertest.o: src/gameboarddrawertest.cc.o
+
+.PHONY : src/gameboarddrawertest.o
+
+# target to build an object file
+src/gameboarddrawertest.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o
+.PHONY : src/gameboarddrawertest.cc.o
+
+src/gameboarddrawertest.i: src/gameboarddrawertest.cc.i
+
+.PHONY : src/gameboarddrawertest.i
+
+# target to preprocess a source file
+src/gameboarddrawertest.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.i
+.PHONY : src/gameboarddrawertest.cc.i
+
+src/gameboarddrawertest.s: src/gameboarddrawertest.cc.s
+
+.PHONY : src/gameboarddrawertest.s
+
+# target to generate assembly for a file
+src/gameboarddrawertest.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.s
+.PHONY : src/gameboarddrawertest.cc.s
+
+src/gameboardtest.o: src/gameboardtest.cc.o
+
+.PHONY : src/gameboardtest.o
+
+# target to build an object file
+src/gameboardtest.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o
+.PHONY : src/gameboardtest.cc.o
+
+src/gameboardtest.i: src/gameboardtest.cc.i
+
+.PHONY : src/gameboardtest.i
+
+# target to preprocess a source file
+src/gameboardtest.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.i
+.PHONY : src/gameboardtest.cc.i
+
+src/gameboardtest.s: src/gameboardtest.cc.s
+
+.PHONY : src/gameboardtest.s
+
+# target to generate assembly for a file
+src/gameboardtest.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.s
+.PHONY : src/gameboardtest.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -183,6 +264,15 @@ help:
 	@echo "... src/GoSheepGoProgram.o"
 	@echo "... src/GoSheepGoProgram.i"
 	@echo "... src/GoSheepGoProgram.s"
+	@echo "... src/Test_Graphic.o"
+	@echo "... src/Test_Graphic.i"
+	@echo "... src/Test_Graphic.s"
+	@echo "... src/gameboarddrawertest.o"
+	@echo "... src/gameboarddrawertest.i"
+	@echo "... src/gameboarddrawertest.s"
+	@echo "... src/gameboardtest.o"
+	@echo "... src/gameboardtest.i"
+	@echo "... src/gameboardtest.s"
 .PHONY : help
 
 

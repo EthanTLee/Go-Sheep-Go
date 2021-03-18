@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+../core_lib/includes/GoSheepGo/GoSheepGo.hh
+
+/Users/peepeepoopoo/projects/GoSheepGo/main.cpp
+exception
+-
+iostream
+-
+GoSheepGo/GoSheepGo.hh
+/Users/peepeepoopoo/projects/GoSheepGo/GoSheepGo/GoSheepGo.hh
+

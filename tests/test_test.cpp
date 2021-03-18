@@ -1,6 +1,7 @@
+
+
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "GoSheepGo/GoSheepHelpers.hh"
 #include<utility>
 
 unsigned int Factorial( unsigned int number ) {
@@ -14,6 +15,8 @@ TEST_CASE( "Factorials are computed", "[factorial]" ) {
     REQUIRE( Factorial(10) == 3628800 );
 }
 
+
+/*
 TEST_CASE( "Testing not null class", "[not null]" ) {
     int i = 5;
     gosheep::__not_null__<int*> xone = &i;
@@ -25,3 +28,5 @@ TEST_CASE( "Testing not null class", "[not null]" ) {
 
     
 }
+
+*/

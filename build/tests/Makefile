@@ -144,6 +144,33 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
+Test_Graphic.o: Test_Graphic.cpp.o
+
+.PHONY : Test_Graphic.o
+
+# target to build an object file
+Test_Graphic.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/Test_Graphic.cpp.o
+.PHONY : Test_Graphic.cpp.o
+
+Test_Graphic.i: Test_Graphic.cpp.i
+
+.PHONY : Test_Graphic.i
+
+# target to preprocess a source file
+Test_Graphic.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/Test_Graphic.cpp.i
+.PHONY : Test_Graphic.cpp.i
+
+Test_Graphic.s: Test_Graphic.cpp.s
+
+.PHONY : Test_Graphic.s
+
+# target to generate assembly for a file
+Test_Graphic.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/Test_Graphic.cpp.s
+.PHONY : Test_Graphic.cpp.s
+
 test_test.o: test_test.cpp.o
 
 .PHONY : test_test.o
@@ -171,33 +198,6 @@ test_test.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_test.cpp.s
 .PHONY : test_test.cpp.s
 
-test_tile.o: test_tile.cpp.o
-
-.PHONY : test_tile.o
-
-# target to build an object file
-test_tile.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tile.cpp.o
-.PHONY : test_tile.cpp.o
-
-test_tile.i: test_tile.cpp.i
-
-.PHONY : test_tile.i
-
-# target to preprocess a source file
-test_tile.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tile.cpp.i
-.PHONY : test_tile.cpp.i
-
-test_tile.s: test_tile.cpp.s
-
-.PHONY : test_tile.s
-
-# target to generate assembly for a file
-test_tile.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tile.cpp.s
-.PHONY : test_tile.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -207,12 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
+	@echo "... Test_Graphic.o"
+	@echo "... Test_Graphic.i"
+	@echo "... Test_Graphic.s"
 	@echo "... test_test.o"
 	@echo "... test_test.i"
 	@echo "... test_test.s"
-	@echo "... test_tile.o"
-	@echo "... test_tile.i"
-	@echo "... test_tile.s"
 .PHONY : help
 
 
