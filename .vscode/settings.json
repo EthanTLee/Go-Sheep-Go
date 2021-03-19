@@ -23,7 +23,12 @@
         "regex": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "unordered_map": "cpp",
+        "functional": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp"
     },
     "cmake.configureSettings": {
         "CMAKE_TOOLCHAIN_FILE": "/Users/peepeepoopoo/projects/vcpkg/scripts/buildsystems/vcpkg.cmake"

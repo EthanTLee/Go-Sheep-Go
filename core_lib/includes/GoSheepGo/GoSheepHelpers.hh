@@ -71,7 +71,7 @@ namespace gosheep {
         return ret;
     }
 
-    SDL_Window* Make_Window() {
+    inline SDL_Window* Make_Window() {
         SDL_Window* ret = SDL_CreateWindow(
             "Go Sheep Go",
             SDL_WINDOWPOS_UNDEFINED,
@@ -83,11 +83,11 @@ namespace gosheep {
         return ret;
     }
 
-    void Paint_Surface_Blue(SDL_Surface* window_surface) {
+    inline void Paint_Surface_Blue(SDL_Surface* window_surface) {
         SDL_FillRect(window_surface, NULL, SDL_MapRGB (window_surface -> format, 0x00, 0x00, 0xF0));
     }
 
-    void Continue_Until_Quit() {
+    inline void Continue_Until_Quit() {
         bool quit = false;
         SDL_Event e;
         while (!quit) {
@@ -99,7 +99,7 @@ namespace gosheep {
         }
     }
 
-    userinput Get_Input(SDL_Event event) {
+    inline userinput Get_Input(SDL_Event event) {
         userinput ret;
 
         switch (event.type) {

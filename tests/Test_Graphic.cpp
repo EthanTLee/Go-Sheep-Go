@@ -1,14 +1,14 @@
-#include "catch.hpp"
-#include <string>
+#include <GoSheepGo/Graphic.hh>
+#include <GoSheepGo/GoSheepHelpers.hh>
 
+#include "catch.hpp"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-
-#include <GoSheepGo/GoSheepHelpers.hh>
-#include <GoSheepGo/Graphic.hh>
+#include <string>
 
 
 using namespace gosheep;
+
 
 TEST_CASE( "Graphic is drawn", "[Graphic]" ) {
 

@@ -171,32 +171,86 @@ src/GoSheepGoProgram.cc.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.s
 .PHONY : src/GoSheepGoProgram.cc.s
 
-src/Test_Graphic.o: src/Test_Graphic.cpp.o
+src/Graphic.o: src/Graphic.cc.o
 
-.PHONY : src/Test_Graphic.o
+.PHONY : src/Graphic.o
 
 # target to build an object file
-src/Test_Graphic.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.o
-.PHONY : src/Test_Graphic.cpp.o
+src/Graphic.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o
+.PHONY : src/Graphic.cc.o
 
-src/Test_Graphic.i: src/Test_Graphic.cpp.i
+src/Graphic.i: src/Graphic.cc.i
 
-.PHONY : src/Test_Graphic.i
+.PHONY : src/Graphic.i
 
 # target to preprocess a source file
-src/Test_Graphic.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.i
-.PHONY : src/Test_Graphic.cpp.i
+src/Graphic.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.i
+.PHONY : src/Graphic.cc.i
 
-src/Test_Graphic.s: src/Test_Graphic.cpp.s
+src/Graphic.s: src/Graphic.cc.s
 
-.PHONY : src/Test_Graphic.s
+.PHONY : src/Graphic.s
 
 # target to generate assembly for a file
-src/Test_Graphic.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Test_Graphic.cpp.s
-.PHONY : src/Test_Graphic.cpp.s
+src/Graphic.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s
+.PHONY : src/Graphic.cc.s
+
+src/GraphicGroup.o: src/GraphicGroup.cc.o
+
+.PHONY : src/GraphicGroup.o
+
+# target to build an object file
+src/GraphicGroup.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o
+.PHONY : src/GraphicGroup.cc.o
+
+src/GraphicGroup.i: src/GraphicGroup.cc.i
+
+.PHONY : src/GraphicGroup.i
+
+# target to preprocess a source file
+src/GraphicGroup.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.i
+.PHONY : src/GraphicGroup.cc.i
+
+src/GraphicGroup.s: src/GraphicGroup.cc.s
+
+.PHONY : src/GraphicGroup.s
+
+# target to generate assembly for a file
+src/GraphicGroup.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.s
+.PHONY : src/GraphicGroup.cc.s
+
+src/Position.o: src/Position.cc.o
+
+.PHONY : src/Position.o
+
+# target to build an object file
+src/Position.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.o
+.PHONY : src/Position.cc.o
+
+src/Position.i: src/Position.cc.i
+
+.PHONY : src/Position.i
+
+# target to preprocess a source file
+src/Position.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.i
+.PHONY : src/Position.cc.i
+
+src/Position.s: src/Position.cc.s
+
+.PHONY : src/Position.s
+
+# target to generate assembly for a file
+src/Position.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.s
+.PHONY : src/Position.cc.s
 
 src/gameboarddrawertest.o: src/gameboarddrawertest.cc.o
 
@@ -264,9 +318,15 @@ help:
 	@echo "... src/GoSheepGoProgram.o"
 	@echo "... src/GoSheepGoProgram.i"
 	@echo "... src/GoSheepGoProgram.s"
-	@echo "... src/Test_Graphic.o"
-	@echo "... src/Test_Graphic.i"
-	@echo "... src/Test_Graphic.s"
+	@echo "... src/Graphic.o"
+	@echo "... src/Graphic.i"
+	@echo "... src/Graphic.s"
+	@echo "... src/GraphicGroup.o"
+	@echo "... src/GraphicGroup.i"
+	@echo "... src/GraphicGroup.s"
+	@echo "... src/Position.o"
+	@echo "... src/Position.i"
+	@echo "... src/Position.s"
 	@echo "... src/gameboarddrawertest.o"
 	@echo "... src/gameboarddrawertest.i"
 	@echo "... src/gameboarddrawertest.s"

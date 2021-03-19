@@ -1,5 +1,3 @@
-
-
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include<utility>
@@ -14,6 +12,8 @@ TEST_CASE( "Factorials are computed", "[factorial]" ) {
     REQUIRE( Factorial(3) == 6 );
     REQUIRE( Factorial(10) == 3628800 );
 }
+
+
 
 
 /*
