@@ -16,6 +16,11 @@
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
+  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++17 -o CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicEntity.cc",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicEntity.cc"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
   "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++17 -o CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc",
   "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc"
 },

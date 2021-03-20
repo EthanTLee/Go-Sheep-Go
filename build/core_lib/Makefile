@@ -198,6 +198,33 @@ src/Graphic.cc.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s
 .PHONY : src/Graphic.cc.s
 
+src/GraphicEntity.o: src/GraphicEntity.cc.o
+
+.PHONY : src/GraphicEntity.o
+
+# target to build an object file
+src/GraphicEntity.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o
+.PHONY : src/GraphicEntity.cc.o
+
+src/GraphicEntity.i: src/GraphicEntity.cc.i
+
+.PHONY : src/GraphicEntity.i
+
+# target to preprocess a source file
+src/GraphicEntity.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.i
+.PHONY : src/GraphicEntity.cc.i
+
+src/GraphicEntity.s: src/GraphicEntity.cc.s
+
+.PHONY : src/GraphicEntity.s
+
+# target to generate assembly for a file
+src/GraphicEntity.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.s
+.PHONY : src/GraphicEntity.cc.s
+
 src/GraphicGroup.o: src/GraphicGroup.cc.o
 
 .PHONY : src/GraphicGroup.o
@@ -321,6 +348,9 @@ help:
 	@echo "... src/Graphic.o"
 	@echo "... src/Graphic.i"
 	@echo "... src/Graphic.s"
+	@echo "... src/GraphicEntity.o"
+	@echo "... src/GraphicEntity.i"
+	@echo "... src/GraphicEntity.s"
 	@echo "... src/GraphicGroup.o"
 	@echo "... src/GraphicGroup.i"
 	@echo "... src/GraphicGroup.s"

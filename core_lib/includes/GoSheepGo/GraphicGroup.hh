@@ -12,6 +12,7 @@ namespace gosheep {
     class GraphicGroup {
         public:
 
+        GraphicGroup();
         GraphicGroup(std::vector<Graphic> list);
 
         std::vector<Graphic> m_list;

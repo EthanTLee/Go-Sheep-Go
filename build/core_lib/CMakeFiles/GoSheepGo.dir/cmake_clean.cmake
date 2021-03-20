@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o"
+  "CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/Position.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o"

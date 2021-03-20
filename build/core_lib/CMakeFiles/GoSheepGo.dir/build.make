@@ -102,9 +102,22 @@ core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Graphic.cc -o CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s
 
+core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
+core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o: ../core_lib/src/GraphicEntity.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicEntity.cc
+
+core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.i"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicEntity.cc > CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.i
+
+core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.s"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicEntity.cc -o CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.s
+
 core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o: ../core_lib/src/GraphicGroup.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.i: cmake_force
@@ -117,7 +130,7 @@ core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.s: cmake_force
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.o: ../core_lib/src/Position.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.o"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/Position.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Position.cc
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.i: cmake_force
@@ -130,7 +143,7 @@ core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.s: cmake_force
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o: ../core_lib/src/gameboarddrawertest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/gameboarddrawertest.cc
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.i: cmake_force
@@ -143,7 +156,7 @@ core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.s: cmake_force
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o: ../core_lib/src/gameboardtest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/gameboardtest.cc
 
 core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.i: cmake_force
@@ -158,6 +171,7 @@ core_lib/CMakeFiles/GoSheepGo.dir/src/gameboardtest.cc.s: cmake_force
 GoSheepGo_OBJECTS = \
 "CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.o" \
 "CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o" \
+"CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o" \
 "CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o" \
 "CMakeFiles/GoSheepGo.dir/src/Position.cc.o" \
 "CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o" \
@@ -168,6 +182,7 @@ GoSheepGo_EXTERNAL_OBJECTS =
 
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/GoSheepGoProgram.cc.o
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o
+core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicEntity.cc.o
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/Position.cc.o
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/gameboarddrawertest.cc.o
@@ -180,7 +195,7 @@ core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-os
 core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libpng16d.a
 core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libz.a
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libGoSheepGo.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libGoSheepGo.dylib"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GoSheepGo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

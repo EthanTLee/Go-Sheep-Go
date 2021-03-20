@@ -6,6 +6,10 @@
 
 using namespace gosheep;
 
+GraphicGroup::GraphicGroup() {
+    
+}
+
 GraphicGroup::GraphicGroup(std::vector<Graphic> list) {
 
     for (int i = 0; i < list.size(); i++) {
