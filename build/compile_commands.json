@@ -41,6 +41,11 @@
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/Test_GraphicGroup.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/Test_GraphicGroup.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/Test_GraphicGroup.cpp"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
   "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/Test_Position.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/Test_Position.cpp",
   "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/Test_Position.cpp"
 },

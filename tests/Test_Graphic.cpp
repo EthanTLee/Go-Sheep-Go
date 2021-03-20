@@ -18,7 +18,7 @@ TEST_CASE( "Graphic is drawn", "[Graphic]" ) {
     Paint_Surface_Blue(window_surface);
     SDL_UpdateWindowSurface(window);
 
-    Graphic graphic("../../res/grass.png");
+    Graphic graphic("../../res/grass.png", "grass");
 
     SDL_Rect grass_rect;
     grass_rect.x = 100;

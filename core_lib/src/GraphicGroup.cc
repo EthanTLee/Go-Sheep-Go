@@ -23,4 +23,5 @@ void GraphicGroup::DrawIndividual(
         if (m_list[i].m_name == graphic_name) {
             m_list[i].Draw(dest_surf, dest_pos);
         }
+    }
 }
