@@ -1,31 +1,30 @@
 #include <GoSheepGo/GraphicGroup.hh>
 
+#include<GoSheepGo/Graphic.hh>
 #include <SDL2/SDL.h>
 #include <vector>
 #include <string>
 
 using namespace gosheep;
 
-GraphicGroup::GraphicGroup() {
-    
-}
+GraphicGroup::GraphicGroup() { }
 
-GraphicGroup::GraphicGroup(std::vector<Graphic> list) {
-
-    for (int i = 0; i < list.size(); i++) {
-        m_list.push_back(list[i]);
-    }
-}
-
-void GraphicGroup::DrawIndividual(
-    std::string graphic_name, 
-    SDL_Surface* dest_surf, 
-    SDL_Rect* dest_pos
+GraphicGroup::GraphicGroup(
+    std::vector<SDL_Surface*> surfaces,
+    std::vector<std::string> names
 ) {
-    
-    for (int i = 0; i < m_list.size(); i++) {
-        if (m_list[i].m_name == graphic_name) {
-            m_list[i].Draw(dest_surf, dest_pos);
-        }
+
+    for (int i = 0; i < surfaces.size(); i++) {
+        m_graphics.push_back(Graphic(surfaces[i],names[i]));
     }
+}
+
+SDL_Surface* GraphicGroup::GetSurface(std::string name) {
+    SDL_Surface* ret;
+    for (int i = 0; i < m_graphics.size(); i++) {
+        if (m_graphics[i].m_name == name) {
+            ret = m_graphics[i].m_surface;
+        } 
+    }
+    return ret;
 }

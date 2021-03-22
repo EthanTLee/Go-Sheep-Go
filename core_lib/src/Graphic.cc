@@ -8,22 +8,16 @@
 
 using namespace gosheep;
 
+Graphic::Graphic() { }; 
 
-Graphic::Graphic(std::string path_to_image, std::string name) {
+Graphic::Graphic(SDL_Surface* surface, std::string name) {
 
-    m_surface = IMG_Load(path_to_image.c_str());
+    m_surface = surface;
     if (m_surface == nullptr) {
         throw std::runtime_error("Image not loaded");
     }
 
     m_name = name;
-}
-
-
-void Graphic::Draw(SDL_Surface* dest_surf, SDL_Rect* dest_pos) {
-
-    SDL_BlitSurface(m_surface, NULL, dest_surf, dest_pos); 
-
 }
 
 

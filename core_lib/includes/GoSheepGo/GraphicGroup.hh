@@ -13,15 +13,15 @@ namespace gosheep {
         public:
 
         GraphicGroup();
-        GraphicGroup(std::vector<Graphic> list);
-
-        std::vector<Graphic> m_list;
-
-        void DrawIndividual(
-            std::string graphic_name, 
-            SDL_Surface* dest_surf, 
-            SDL_Rect* dest_pos
+        
+        GraphicGroup(
+            std::vector<SDL_Surface*> surfaces,
+            std::vector<std::string> names
         );
+
+        std::vector<Graphic> m_graphics;
+
+        SDL_Surface* GetSurface(std::string name);
 
     };
 }

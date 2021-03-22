@@ -1,6 +1,5 @@
 #include <exception>
 #include <iostream>
-#include "GoSheepGo/GoSheepGo.hh"
 
 
 int main(int argc, char* argv[])

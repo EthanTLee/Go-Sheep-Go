@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_test.dir/Test_Graphic.cpp.o"
-  "CMakeFiles/my_test.dir/Test_GraphicGroup.cpp.o"
-  "CMakeFiles/my_test.dir/Test_Position.cpp.o"
-  "CMakeFiles/my_test.dir/test_test.cpp.o"
+  "CMakeFiles/my_test.dir/TestDrawer.cpp.o"
+  "CMakeFiles/my_test.dir/TestGraphic.cpp.o"
+  "CMakeFiles/my_test.dir/TestGraphicGroup.cpp.o"
+  "CMakeFiles/my_test.dir/TestTileGraphics.cpp.o"
   "my_test"
   "my_test.pdb"
 )

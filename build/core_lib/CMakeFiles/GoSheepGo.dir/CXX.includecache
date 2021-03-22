@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../core_lib/includes/GoSheepGo/GoSheepHelpers.hh
-SDL2/SDL.h
--
-SDL2/SDL_image.h
--
-vector
--
-exception
--
-
 ../core_lib/includes/GoSheepGo/Graphic.hh
 SDL2/SDL.h
 -
@@ -32,26 +22,14 @@ vector
 string
 -
 
-../core_lib/includes/GoSheepGo/Position.hh
-GoSheepGo/GoSheepHelpers.hh
--
-SDL2/SDL.h
--
-
-/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc
+../core_lib/includes/GoSheepGo/TileGraphics.hh
 GoSheepGo/GraphicGroup.hh
 -
-SDL2/SDL.h
--
-vector
--
-string
--
 
-/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Position.cc
-GoSheepGo/Position.hh
+/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileGraphics.cc
+GoSheepGo/TileGraphics.hh
 -
-GoSheepGo/GoSheepHelpers.hh
+SDL2/SDL.h
 -
 
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
@@ -321,16 +299,6 @@ close_code.h
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL_hints.h
 SDL_stdinc.h
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL_stdinc.h
-begin_code.h
-/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/begin_code.h
-close_code.h
-/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/close_code.h
-
-/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL_image.h
-SDL.h
-/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
-SDL_version.h
-/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL_version.h
 begin_code.h
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/begin_code.h
 close_code.h

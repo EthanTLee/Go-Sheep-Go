@@ -32,18 +32,12 @@ vector
 string
 -
 
-../core_lib/includes/GoSheepGo/Position.hh
-GoSheepGo/GoSheepHelpers.hh
--
-SDL2/SDL.h
--
-
-/Users/peepeepoopoo/projects/GoSheepGo/tests/Test_GraphicGroup.cpp
+../core_lib/includes/GoSheepGo/TileGraphics.hh
 GoSheepGo/GraphicGroup.hh
 -
-GoSheepGo/Graphic.hh
--
-GoSheepGo/GoSheepHelpers.hh
+
+/Users/peepeepoopoo/projects/GoSheepGo/tests/TestTileGraphics.cpp
+GoSheepGo/TileGraphics.hh
 -
 catch.hpp
 /Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
@@ -51,19 +45,11 @@ SDL2/SDL.h
 -
 SDL2/SDL_image.h
 -
+GoSheepGo/GoSheepHelpers.hh
+-
 string
 -
 vector
--
-
-/Users/peepeepoopoo/projects/GoSheepGo/tests/Test_Position.cpp
-GoSheepGo/Position.hh
--
-GoSheepGo/GoSheepHelpers.hh
--
-catch.hpp
-/Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
-SDL2/SDL.h
 -
 
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
