@@ -225,6 +225,33 @@ TestGraphicGroup.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphicGroup.cpp.s
 .PHONY : TestGraphicGroup.cpp.s
 
+TestTileDrawer.o: TestTileDrawer.cpp.o
+
+.PHONY : TestTileDrawer.o
+
+# target to build an object file
+TestTileDrawer.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestTileDrawer.cpp.o
+.PHONY : TestTileDrawer.cpp.o
+
+TestTileDrawer.i: TestTileDrawer.cpp.i
+
+.PHONY : TestTileDrawer.i
+
+# target to preprocess a source file
+TestTileDrawer.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestTileDrawer.cpp.i
+.PHONY : TestTileDrawer.cpp.i
+
+TestTileDrawer.s: TestTileDrawer.cpp.s
+
+.PHONY : TestTileDrawer.s
+
+# target to generate assembly for a file
+TestTileDrawer.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestTileDrawer.cpp.s
+.PHONY : TestTileDrawer.cpp.s
+
 TestTileGraphics.o: TestTileGraphics.cpp.o
 
 .PHONY : TestTileGraphics.o
@@ -270,6 +297,9 @@ help:
 	@echo "... TestGraphicGroup.o"
 	@echo "... TestGraphicGroup.i"
 	@echo "... TestGraphicGroup.s"
+	@echo "... TestTileDrawer.o"
+	@echo "... TestTileDrawer.i"
+	@echo "... TestTileDrawer.s"
 	@echo "... TestTileGraphics.o"
 	@echo "... TestTileGraphics.i"
 	@echo "... TestTileGraphics.s"

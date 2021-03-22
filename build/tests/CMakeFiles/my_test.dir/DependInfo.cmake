@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/TestDrawer.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/TestDrawer.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/TestGraphic.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/TestGraphic.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/TestGraphicGroup.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/TestGraphicGroup.cpp.o"
+  "/Users/peepeepoopoo/projects/GoSheepGo/tests/TestTileDrawer.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/TestTileDrawer.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/TestTileGraphics.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/TestTileGraphics.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o"
+  "CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o"
   "CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o"
   "libGoSheepGo.dylib"
   "libGoSheepGo.pdb"
