@@ -76,87 +76,27 @@ include core_lib/CMakeFiles/GoSheepGo.dir/progress.make
 # Include the compile flags for this target's objects.
 include core_lib/CMakeFiles/GoSheepGo.dir/flags.make
 
-core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
-core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o: ../core_lib/src/Drawer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawer.cc
+core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
+core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o: ../core_lib/src/Drawable.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc
 
-core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/Drawer.cc.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawer.cc > CMakeFiles/GoSheepGo.dir/src/Drawer.cc.i
+core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/Drawable.cc.i"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc > CMakeFiles/GoSheepGo.dir/src/Drawable.cc.i
 
-core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/Drawer.cc.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawer.cc -o CMakeFiles/GoSheepGo.dir/src/Drawer.cc.s
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
-core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o: ../core_lib/src/Graphic.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Graphic.cc
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/Graphic.cc.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Graphic.cc > CMakeFiles/GoSheepGo.dir/src/Graphic.cc.i
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Graphic.cc -o CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
-core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o: ../core_lib/src/GraphicGroup.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc > CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.i
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/GraphicGroup.cc -o CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.s
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o: ../core_lib/src/TileDrawer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileDrawer.cc
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileDrawer.cc > CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.i
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileDrawer.cc -o CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.s
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o: core_lib/CMakeFiles/GoSheepGo.dir/flags.make
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o: ../core_lib/src/TileGraphics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileGraphics.cc
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.i"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileGraphics.cc > CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.i
-
-core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.s"
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/TileGraphics.cc -o CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.s
+core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoSheepGo.dir/src/Drawable.cc.s"
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc -o CMakeFiles/GoSheepGo.dir/src/Drawable.cc.s
 
 # Object files for target GoSheepGo
 GoSheepGo_OBJECTS = \
-"CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o" \
-"CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o" \
-"CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o" \
-"CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o" \
-"CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o"
+"CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o"
 
 # External object files for target GoSheepGo
 GoSheepGo_EXTERNAL_OBJECTS =
 
-core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o
-core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o
-core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o
-core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o
-core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o
+core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/build.make
 core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libSDL2maind.a
 core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libSDL2d.a
@@ -165,7 +105,7 @@ core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-os
 core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libpng16d.a
 core_lib/libGoSheepGo.dylib: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/debug/lib/libz.a
 core_lib/libGoSheepGo.dylib: core_lib/CMakeFiles/GoSheepGo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libGoSheepGo.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peepeepoopoo/projects/GoSheepGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libGoSheepGo.dylib"
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build/core_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GoSheepGo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

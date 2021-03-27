@@ -144,140 +144,32 @@ GoSheepGo/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/build
 .PHONY : GoSheepGo/fast
 
-src/Drawer.o: src/Drawer.cc.o
+src/Drawable.o: src/Drawable.cc.o
 
-.PHONY : src/Drawer.o
-
-# target to build an object file
-src/Drawer.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.o
-.PHONY : src/Drawer.cc.o
-
-src/Drawer.i: src/Drawer.cc.i
-
-.PHONY : src/Drawer.i
-
-# target to preprocess a source file
-src/Drawer.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.i
-.PHONY : src/Drawer.cc.i
-
-src/Drawer.s: src/Drawer.cc.s
-
-.PHONY : src/Drawer.s
-
-# target to generate assembly for a file
-src/Drawer.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawer.cc.s
-.PHONY : src/Drawer.cc.s
-
-src/Graphic.o: src/Graphic.cc.o
-
-.PHONY : src/Graphic.o
+.PHONY : src/Drawable.o
 
 # target to build an object file
-src/Graphic.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.o
-.PHONY : src/Graphic.cc.o
+src/Drawable.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o
+.PHONY : src/Drawable.cc.o
 
-src/Graphic.i: src/Graphic.cc.i
+src/Drawable.i: src/Drawable.cc.i
 
-.PHONY : src/Graphic.i
-
-# target to preprocess a source file
-src/Graphic.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.i
-.PHONY : src/Graphic.cc.i
-
-src/Graphic.s: src/Graphic.cc.s
-
-.PHONY : src/Graphic.s
-
-# target to generate assembly for a file
-src/Graphic.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Graphic.cc.s
-.PHONY : src/Graphic.cc.s
-
-src/GraphicGroup.o: src/GraphicGroup.cc.o
-
-.PHONY : src/GraphicGroup.o
-
-# target to build an object file
-src/GraphicGroup.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.o
-.PHONY : src/GraphicGroup.cc.o
-
-src/GraphicGroup.i: src/GraphicGroup.cc.i
-
-.PHONY : src/GraphicGroup.i
+.PHONY : src/Drawable.i
 
 # target to preprocess a source file
-src/GraphicGroup.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.i
-.PHONY : src/GraphicGroup.cc.i
+src/Drawable.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.i
+.PHONY : src/Drawable.cc.i
 
-src/GraphicGroup.s: src/GraphicGroup.cc.s
+src/Drawable.s: src/Drawable.cc.s
 
-.PHONY : src/GraphicGroup.s
-
-# target to generate assembly for a file
-src/GraphicGroup.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/GraphicGroup.cc.s
-.PHONY : src/GraphicGroup.cc.s
-
-src/TileDrawer.o: src/TileDrawer.cc.o
-
-.PHONY : src/TileDrawer.o
-
-# target to build an object file
-src/TileDrawer.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.o
-.PHONY : src/TileDrawer.cc.o
-
-src/TileDrawer.i: src/TileDrawer.cc.i
-
-.PHONY : src/TileDrawer.i
-
-# target to preprocess a source file
-src/TileDrawer.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.i
-.PHONY : src/TileDrawer.cc.i
-
-src/TileDrawer.s: src/TileDrawer.cc.s
-
-.PHONY : src/TileDrawer.s
+.PHONY : src/Drawable.s
 
 # target to generate assembly for a file
-src/TileDrawer.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/TileDrawer.cc.s
-.PHONY : src/TileDrawer.cc.s
-
-src/TileGraphics.o: src/TileGraphics.cc.o
-
-.PHONY : src/TileGraphics.o
-
-# target to build an object file
-src/TileGraphics.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.o
-.PHONY : src/TileGraphics.cc.o
-
-src/TileGraphics.i: src/TileGraphics.cc.i
-
-.PHONY : src/TileGraphics.i
-
-# target to preprocess a source file
-src/TileGraphics.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.i
-.PHONY : src/TileGraphics.cc.i
-
-src/TileGraphics.s: src/TileGraphics.cc.s
-
-.PHONY : src/TileGraphics.s
-
-# target to generate assembly for a file
-src/TileGraphics.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/TileGraphics.cc.s
-.PHONY : src/TileGraphics.cc.s
+src/Drawable.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.s
+.PHONY : src/Drawable.cc.s
 
 # Help Target
 help:
@@ -288,21 +180,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GoSheepGo"
-	@echo "... src/Drawer.o"
-	@echo "... src/Drawer.i"
-	@echo "... src/Drawer.s"
-	@echo "... src/Graphic.o"
-	@echo "... src/Graphic.i"
-	@echo "... src/Graphic.s"
-	@echo "... src/GraphicGroup.o"
-	@echo "... src/GraphicGroup.i"
-	@echo "... src/GraphicGroup.s"
-	@echo "... src/TileDrawer.o"
-	@echo "... src/TileDrawer.i"
-	@echo "... src/TileDrawer.s"
-	@echo "... src/TileGraphics.o"
-	@echo "... src/TileGraphics.i"
-	@echo "... src/TileGraphics.s"
+	@echo "... src/Drawable.o"
+	@echo "... src/Drawable.i"
+	@echo "... src/Drawable.s"
 .PHONY : help
 
 

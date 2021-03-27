@@ -80,4 +80,32 @@ TEST_CASE( "check that names match images (sel on left, reg on right)", "[Graphi
 }
 
 
+TEST_CASE("test the GetGraphic function", "[GraphicGroup]") {
+    SDL_Init(SDL_INIT_VIDEO);
+    IMG_Init(IMG_INIT_PNG);
+    
+    SDL_Window* window = Make_Window();
+    SDL_Surface* window_surf = SDL_GetWindowSurface(window);
+
+    std::vector<SDL_Surface*> surfaces;
+    surfaces = {IMG_Load("../../res/grass.png"), IMG_Load("../../res/grass_sel.png")};
+    std::vector<std::string> names = {"grass","grass_sel"};
+    GraphicGroup graphic_group(surfaces, names);
+
+    sizept size;
+    size.x = 98;
+    size.y = 45;
+    pixelpt pos;
+    pos.x = 100;
+    pos.y = 400;
+    SDL_Rect dest_rect = CreateRect(pos, size);
+
+    SDL_BlitSurface(graphic_group.GetGraphic("grass_sel").m_surface, NULL, window_surf, &dest_rect); 
+    SDL_UpdateWindowSurface(window);
+
+    Continue_Until_Quit();
+
+}
+
+
 

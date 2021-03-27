@@ -3,10 +3,10 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <vector>
+#include <string>
 #include <exception>
 
 namespace gosheep {
-
 
     struct point {
         int x= 0, y=0;
@@ -27,7 +27,10 @@ namespace gosheep {
         bool space_bar = false;
     };
 
+    using sprite = SDL_Surface*;
+    using window_surface = SDL_Surface*;
 
+    
     template <typename T>
     class __not_null__{
         public :
