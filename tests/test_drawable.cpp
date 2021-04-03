@@ -9,27 +9,22 @@
 
 using namespace gosheep;
 
-TEST_CASE("draw a drawable", "[drawable]") {
+TEST_CASE("test Drawable class") {
 
     IMG_Init(IMG_INIT_PNG);
     SDL_Init(SDL_INIT_VIDEO);
 
     SDL_Window* window = Make_Window();
-    
-    /*
     window_surface window_surf = SDL_GetWindowSurface(window);
-    sprite grass_sprite = IMG_Load("../../res/grass.png");
+
     pixelpt pos;
-    pos.x = 100;
+    pos.x = 0;
     pos.y = 200;
 
-    Drawable grass(grass_sprite, pos, window_surf);
-    grass.Draw();
-
-    */
+    Drawable grass("../../res/grass.png");
+    grass.Draw(pos, window_surf);
 
     SDL_UpdateWindowSurface(window);
 
     Continue_Until_Quit();
-
 }

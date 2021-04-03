@@ -16,12 +16,17 @@
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_compile.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_compile.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_compile.cpp"
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_drawable.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp"
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_drawable.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp"
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_map.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_map.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_map.cpp"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++11 -o CMakeFiles/my_test.dir/test_window.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_window.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_window.cpp"
 }
 ]

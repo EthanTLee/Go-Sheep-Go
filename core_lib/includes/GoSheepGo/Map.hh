@@ -1,3 +1,4 @@
+/*
 #pragma once
 
 #include <GoSheepGo/Drawable.hh>
@@ -33,18 +34,14 @@ private:
     layer_t <Tiles> m_tilemap;
     layer_t <Sheeps> m_sheepmap;
 
-    std::string grass_regular_path = "../../res/grass.png";
-    std::string grass_select_path = "../../res/grass_sel.png";
-    std::string sheep_white_path = "../../res/sheep_white.png";
-    std::string sheep_black_path = "../../res/sheep_black.png";
-/*
-    Drawable grass_regular(grass_regular_path);
-    Drawable grass_select(grass_select_path);
-    Drawable sheep_white(sheep_white_path);
-    Drawable sheep_black(sheep_black_path);
-*/
+    Drawable grass_regular;
+    Drawable grass_select;
+    Drawable sheep_white;
+    Drawable sheep_black;
+
     gridpt m_select_position;
 
 };
 
 }
+*/

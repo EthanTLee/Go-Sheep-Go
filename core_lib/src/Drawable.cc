@@ -12,7 +12,6 @@ Drawable::Drawable(sprite graphic) {
     if (m_sprite == nullptr) {
         throw std::runtime_error("sprite not loaded");
     }    
-
 }
 
 Drawable::Drawable(std::string path_to_image) {

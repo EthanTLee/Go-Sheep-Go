@@ -144,33 +144,6 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
-test_compile.o: test_compile.cpp.o
-
-.PHONY : test_compile.o
-
-# target to build an object file
-test_compile.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_compile.cpp.o
-.PHONY : test_compile.cpp.o
-
-test_compile.i: test_compile.cpp.i
-
-.PHONY : test_compile.i
-
-# target to preprocess a source file
-test_compile.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_compile.cpp.i
-.PHONY : test_compile.cpp.i
-
-test_compile.s: test_compile.cpp.s
-
-.PHONY : test_compile.s
-
-# target to generate assembly for a file
-test_compile.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_compile.cpp.s
-.PHONY : test_compile.cpp.s
-
 test_drawable.o: test_drawable.cpp.o
 
 .PHONY : test_drawable.o
@@ -198,6 +171,60 @@ test_drawable.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.s
 .PHONY : test_drawable.cpp.s
 
+test_map.o: test_map.cpp.o
+
+.PHONY : test_map.o
+
+# target to build an object file
+test_map.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map.cpp.o
+.PHONY : test_map.cpp.o
+
+test_map.i: test_map.cpp.i
+
+.PHONY : test_map.i
+
+# target to preprocess a source file
+test_map.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map.cpp.i
+.PHONY : test_map.cpp.i
+
+test_map.s: test_map.cpp.s
+
+.PHONY : test_map.s
+
+# target to generate assembly for a file
+test_map.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map.cpp.s
+.PHONY : test_map.cpp.s
+
+test_window.o: test_window.cpp.o
+
+.PHONY : test_window.o
+
+# target to build an object file
+test_window.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_window.cpp.o
+.PHONY : test_window.cpp.o
+
+test_window.i: test_window.cpp.i
+
+.PHONY : test_window.i
+
+# target to preprocess a source file
+test_window.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_window.cpp.i
+.PHONY : test_window.cpp.i
+
+test_window.s: test_window.cpp.s
+
+.PHONY : test_window.s
+
+# target to generate assembly for a file
+test_window.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_window.cpp.s
+.PHONY : test_window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -207,12 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
-	@echo "... test_compile.o"
-	@echo "... test_compile.i"
-	@echo "... test_compile.s"
 	@echo "... test_drawable.o"
 	@echo "... test_drawable.i"
 	@echo "... test_drawable.s"
+	@echo "... test_map.o"
+	@echo "... test_map.i"
+	@echo "... test_map.s"
+	@echo "... test_window.o"
+	@echo "... test_window.i"
+	@echo "... test_window.s"
 .PHONY : help
 
 
