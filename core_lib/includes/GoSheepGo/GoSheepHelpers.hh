@@ -28,7 +28,14 @@ namespace gosheep {
     };
 
     using sprite = SDL_Surface*;
+
+    inline sprite LoadImageAsSprite(std::string path_to_image) {
+        sprite ret = IMG_Load(path_to_image.c_str());
+        return ret;
+    }
+
     using window_surface = SDL_Surface*;
+    using player_number = int;
 
     
     template <typename T>
@@ -129,6 +136,7 @@ namespace gosheep {
 
         return ret;
     }
+
 
 
 

@@ -144,113 +144,59 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
-TestDrawer.o: TestDrawer.cpp.o
+test_compile.o: test_compile.cpp.o
 
-.PHONY : TestDrawer.o
-
-# target to build an object file
-TestDrawer.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestDrawer.cpp.o
-.PHONY : TestDrawer.cpp.o
-
-TestDrawer.i: TestDrawer.cpp.i
-
-.PHONY : TestDrawer.i
-
-# target to preprocess a source file
-TestDrawer.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestDrawer.cpp.i
-.PHONY : TestDrawer.cpp.i
-
-TestDrawer.s: TestDrawer.cpp.s
-
-.PHONY : TestDrawer.s
-
-# target to generate assembly for a file
-TestDrawer.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestDrawer.cpp.s
-.PHONY : TestDrawer.cpp.s
-
-TestGraphic.o: TestGraphic.cpp.o
-
-.PHONY : TestGraphic.o
+.PHONY : test_compile.o
 
 # target to build an object file
-TestGraphic.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphic.cpp.o
-.PHONY : TestGraphic.cpp.o
+test_compile.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_compile.cpp.o
+.PHONY : test_compile.cpp.o
 
-TestGraphic.i: TestGraphic.cpp.i
+test_compile.i: test_compile.cpp.i
 
-.PHONY : TestGraphic.i
+.PHONY : test_compile.i
 
 # target to preprocess a source file
-TestGraphic.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphic.cpp.i
-.PHONY : TestGraphic.cpp.i
+test_compile.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_compile.cpp.i
+.PHONY : test_compile.cpp.i
 
-TestGraphic.s: TestGraphic.cpp.s
+test_compile.s: test_compile.cpp.s
 
-.PHONY : TestGraphic.s
+.PHONY : test_compile.s
 
 # target to generate assembly for a file
-TestGraphic.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphic.cpp.s
-.PHONY : TestGraphic.cpp.s
+test_compile.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_compile.cpp.s
+.PHONY : test_compile.cpp.s
 
-TestGraphicGroup.o: TestGraphicGroup.cpp.o
+test_drawable.o: test_drawable.cpp.o
 
-.PHONY : TestGraphicGroup.o
+.PHONY : test_drawable.o
 
 # target to build an object file
-TestGraphicGroup.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphicGroup.cpp.o
-.PHONY : TestGraphicGroup.cpp.o
+test_drawable.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.o
+.PHONY : test_drawable.cpp.o
 
-TestGraphicGroup.i: TestGraphicGroup.cpp.i
+test_drawable.i: test_drawable.cpp.i
 
-.PHONY : TestGraphicGroup.i
-
-# target to preprocess a source file
-TestGraphicGroup.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphicGroup.cpp.i
-.PHONY : TestGraphicGroup.cpp.i
-
-TestGraphicGroup.s: TestGraphicGroup.cpp.s
-
-.PHONY : TestGraphicGroup.s
-
-# target to generate assembly for a file
-TestGraphicGroup.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestGraphicGroup.cpp.s
-.PHONY : TestGraphicGroup.cpp.s
-
-TestTileGraphics.o: TestTileGraphics.cpp.o
-
-.PHONY : TestTileGraphics.o
-
-# target to build an object file
-TestTileGraphics.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestTileGraphics.cpp.o
-.PHONY : TestTileGraphics.cpp.o
-
-TestTileGraphics.i: TestTileGraphics.cpp.i
-
-.PHONY : TestTileGraphics.i
+.PHONY : test_drawable.i
 
 # target to preprocess a source file
-TestTileGraphics.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestTileGraphics.cpp.i
-.PHONY : TestTileGraphics.cpp.i
+test_drawable.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.i
+.PHONY : test_drawable.cpp.i
 
-TestTileGraphics.s: TestTileGraphics.cpp.s
+test_drawable.s: test_drawable.cpp.s
 
-.PHONY : TestTileGraphics.s
+.PHONY : test_drawable.s
 
 # target to generate assembly for a file
-TestTileGraphics.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/TestTileGraphics.cpp.s
-.PHONY : TestTileGraphics.cpp.s
+test_drawable.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.s
+.PHONY : test_drawable.cpp.s
 
 # Help Target
 help:
@@ -261,18 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
-	@echo "... TestDrawer.o"
-	@echo "... TestDrawer.i"
-	@echo "... TestDrawer.s"
-	@echo "... TestGraphic.o"
-	@echo "... TestGraphic.i"
-	@echo "... TestGraphic.s"
-	@echo "... TestGraphicGroup.o"
-	@echo "... TestGraphicGroup.i"
-	@echo "... TestGraphicGroup.s"
-	@echo "... TestTileGraphics.o"
-	@echo "... TestTileGraphics.i"
-	@echo "... TestTileGraphics.s"
+	@echo "... test_compile.o"
+	@echo "... test_compile.i"
+	@echo "... test_compile.s"
+	@echo "... test_drawable.o"
+	@echo "... test_drawable.i"
+	@echo "... test_drawable.s"
 .PHONY : help
 
 

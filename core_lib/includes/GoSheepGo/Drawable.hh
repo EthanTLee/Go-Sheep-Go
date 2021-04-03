@@ -1,20 +1,21 @@
 #pragma once
 
 #include<GoSheepGo/GoSheepHelpers.hh>
+#include <string>
 
 namespace gosheep {
-    class Drawable {
-    public:
-        Drawable(sprite graphic, pixelpt target_pos, window_surface target_surf);
 
-        void Draw();
-        void SetPosition(pixelpt position);
-        
-        sprite m_sprite;
+class Drawable {
+public:
+    Drawable();
+    Drawable(sprite graphic);
+    Drawable(std::string path_to_image);
 
-    private:
-        SDL_Rect m_rect;
-        window_surface m_target_surf;
-    };
+    void Draw(pixelpt position, window_surface target_surf);
+    void SetSprite(sprite image);
+
+private:
+    sprite m_sprite = nullptr;
+};
 
 }

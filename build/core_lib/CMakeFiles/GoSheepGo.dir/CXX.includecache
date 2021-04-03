@@ -9,6 +9,8 @@
 ../core_lib/includes/GoSheepGo/Drawable.hh
 GoSheepGo/GoSheepHelpers.hh
 -
+string
+-
 
 ../core_lib/includes/GoSheepGo/GoSheepHelpers.hh
 SDL2/SDL.h
@@ -22,8 +24,20 @@ string
 exception
 -
 
-/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc
+../core_lib/includes/GoSheepGo/Map.hh
 GoSheepGo/Drawable.hh
+-
+GoSheepGo/GoSheepHelpers.hh
+-
+array
+-
+string
+-
+
+/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Map.cc
+GoSheepGo/Map.hh
+-
+GoSheepGo/GoSheepHelpers.hh
 -
 
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
