@@ -1,49 +1,12 @@
 #include "catch.hpp"
-#include <array>
 
+#include<GoSheepGo/Map.hh>
 #include <GoSheepGo/GoSheepHelpers.hh>
 
-
-
-namespace gosheep {
-
-enum class SheepColor {none, black, white};
-
-class Map {
-public:
-
-    void PutSheepAt(gridpt position, SheepColor color) {
-        m_sheeps[position.x][position.y] = color;
-    }
-
-    void RemoveSheepAt(gridpt position) {
-        m_sheeps[position.x][position.y] = SheepColor::none;
-    }
-
-    SheepColor GetSheepColorAt(gridpt position) {
-        return m_sheeps[position.x][position.y];
-    }
-
-    gridpt GetMapSize() {
-        gridpt ret;
-        ret.x = m_sheeps.size();
-        ret.y = m_sheeps[0].size();
-        return ret;
-    }
-    
-private:
-    std::array<std::array<SheepColor, 5>,5> m_sheeps = {
-        {{SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none},
-        {SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none},
-        {SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none},
-        {SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none},
-        {SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none, SheepColor::none}}
-    };
-};
-} //namespace gosheep
+#include <array>
 
 using namespace gosheep;
-TEST_CASE("game map class test") {
+TEST_CASE("game logic map class test") {
 
     Map test_map;
 

@@ -17,6 +17,8 @@ namespace gosheep {
     struct gridpt : public point {};
 
     struct sizept : public pixelpt {};
+
+    enum class SheepColor {none, black, white};
     
     struct userinput {
         bool quit = false;

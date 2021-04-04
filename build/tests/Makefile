@@ -198,6 +198,33 @@ test_map.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map.cpp.s
 .PHONY : test_map.cpp.s
 
+test_map_drawer.o: test_map_drawer.cpp.o
+
+.PHONY : test_map_drawer.o
+
+# target to build an object file
+test_map_drawer.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_drawer.cpp.o
+.PHONY : test_map_drawer.cpp.o
+
+test_map_drawer.i: test_map_drawer.cpp.i
+
+.PHONY : test_map_drawer.i
+
+# target to preprocess a source file
+test_map_drawer.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_drawer.cpp.i
+.PHONY : test_map_drawer.cpp.i
+
+test_map_drawer.s: test_map_drawer.cpp.s
+
+.PHONY : test_map_drawer.s
+
+# target to generate assembly for a file
+test_map_drawer.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_drawer.cpp.s
+.PHONY : test_map_drawer.cpp.s
+
 test_window.o: test_window.cpp.o
 
 .PHONY : test_window.o
@@ -240,6 +267,9 @@ help:
 	@echo "... test_map.o"
 	@echo "... test_map.i"
 	@echo "... test_map.s"
+	@echo "... test_map_drawer.o"
+	@echo "... test_map_drawer.i"
+	@echo "... test_map_drawer.s"
 	@echo "... test_window.o"
 	@echo "... test_window.i"
 	@echo "... test_window.s"
