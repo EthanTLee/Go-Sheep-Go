@@ -11,27 +11,43 @@
 
 namespace gosheep {
 
+struct GameDrawables {
+    GameDrawables() {
+        m_grass_regular = Drawable("../../res/grass.png");
+        m_grass_select = Drawable("../../res/grass_sel.png");
+        m_sheep_white = Drawable("../../res/sheep_white.png");
+        m_sheep_black = Drawable("../../res/sheep_black.png");
+    }
+
+    Drawable m_grass_regular;
+    Drawable m_grass_select;
+    Drawable m_sheep_white;
+    Drawable m_sheep_black;
+};
+
 class MapDrawer{
 public:
     void DrawMap(Map input_map, window_surface target_surf){
-        Drawable tile_grass("../../res/grass.png");
         gridpt grid_size;
         grid_size.x = 5;
         grid_size.y = 5;
 
-        for (int row = 0; row < grid_size.x; row++) {
-            for (int col = 0; col < grid_size.x; col++) {
+        for (int row = 0; row < input_map.GetMapSize().x; row++) {
+            for (int col = 0; col < input_map.GetMapSize().y; col++) {
                 
-                gridpt grid_pos;
-                grid_pos.x = row;
-                grid_pos.y = col;
-                pixelpt pixel_pos = ConvertToPixel(grid_pos);
+                gridpt tile_pos;
+                tile_pos.x = row;
+                tile_pos.y = col;
+                pixelpt pixel_pos = ConvertToPixel(tile_pos);
                 
-                tile_grass.Draw(pixel_pos, target_surf);
+                game_graphics.m_grass_regular.Draw(pixel_pos, target_surf);
             }
         }
     }
 private:
+
+    GameDrawables game_graphics;
+
     pixelpt ConvertToPixel (gridpt grid_position) {
 
         pixelpt ret;
