@@ -59,6 +59,7 @@ tests/CMakeFiles/my_test.dir/test_drawable.cpp.o
 tests/CMakeFiles/my_test.dir/test_game.cpp.o
  ../core_lib/includes/GoSheepGo/Drawable.hh
  ../core_lib/includes/GoSheepGo/GoSheepHelpers.hh
+ ../core_lib/includes/extern/array_enumerator.hh
  /Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp
  /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
  /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL_assert.h

@@ -2,6 +2,7 @@
 #include <GoSheepGo/Drawable.hh>
 #include <GoSheepGo/GoSheepHelpers.hh>
 #include <array>
+#include <extern/array_enumerator.hh>
 
 using namespace gosheep;
 
@@ -86,7 +87,6 @@ class Game {
     void RunGameLoop() {
 
         while(m_quit_status == false) {
-            GetUserInput();
             Update();
             Draw();
         }
@@ -121,39 +121,39 @@ class Game {
             m_turn_number = int{0};
         }
 
-        void GetUserInput() {
-            SDL_Event e;
-        }
-
         void Update() {
             m_tilemap = gameboard_t{TileType::regular};
             m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] = TileType::select;
-            if (m_user_input.type == SDL_QUIT) {
-                m_quit_status = true;
-            }
-            else if (m_user_input.type == SDL_KEYUP) {
+
+            while(SDL_PollEvent(&m_user_input) != 0) {
+                if (m_user_input.type == SDL_QUIT) {
+                    m_quit_status = true;
+                }
+                else if (m_user_input.type == SDL_KEYDOWN) {
+                    
+                    if (m_user_input.key.keysym.sym == SDLK_LEFT) {
+                        m_select_tile_pos.x -= 1;
+                    }
+                    if (m_user_input.key.keysym.sym == SDLK_RIGHT) {
+                        m_select_tile_pos.x += 1;
+                    }
+                    if (m_user_input.key.keysym.sym == SDLK_UP) {
+                        m_select_tile_pos.y += 1;
+                    }
+                    if (m_user_input.key.keysym.sym == SDLK_DOWN) {
+                        m_select_tile_pos.y -= 1;
+                    }
+                    if (m_user_input.key.keysym.sym == SDLK_SPACE) {
+                        m_turn_number += 1;
+                        if (m_turn_number%2 == 0) {
+                            m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::black;
+                        }
+                        else {
+                            m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::white;
+                        }
+                    }
+                }
                 
-                if (m_user_input.key.keysym.sym == SDLK_LEFT) {
-                    m_select_tile_pos.x -= 1;
-                }
-                if (m_user_input.key.keysym.sym == SDLK_RIGHT) {
-                    m_select_tile_pos.x += 1;
-                }
-                if (m_user_input.key.keysym.sym == SDLK_UP) {
-                    m_select_tile_pos.y += 1;
-                }
-                if (m_user_input.key.keysym.sym == SDLK_DOWN) {
-                    m_select_tile_pos.y -= 1;
-                }
-                if (m_user_input.key.keysym.sym == SDLK_SPACE) {
-                    m_turn_number += 1;
-                    if (m_turn_number%2 == 0) {
-                        m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::black;
-                    }
-                    else {
-                        m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::white;
-                    }
-                }
             }
         }
 
@@ -173,6 +173,9 @@ class Game {
                     pixelpt sheep_pixel_pos = ConvertSheepGridToPixel(grid_pos);
                     if (m_sheepmap[row][col] == SheepColor::white) {
                         m_drawables.sheep_white.Draw(sheep_pixel_pos,m_window_surf);
+                    }
+                    else if (m_sheepmap[row][col] == SheepColor::black) {
+                        m_drawables.sheep_black.Draw(sheep_pixel_pos,m_window_surf);
                     }
                 }
             }
