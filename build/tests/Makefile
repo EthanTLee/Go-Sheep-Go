@@ -171,6 +171,60 @@ test_drawable.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.s
 .PHONY : test_drawable.cpp.s
 
+test_game.o: test_game.cpp.o
+
+.PHONY : test_game.o
+
+# target to build an object file
+test_game.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_game.cpp.o
+.PHONY : test_game.cpp.o
+
+test_game.i: test_game.cpp.i
+
+.PHONY : test_game.i
+
+# target to preprocess a source file
+test_game.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_game.cpp.i
+.PHONY : test_game.cpp.i
+
+test_game.s: test_game.cpp.s
+
+.PHONY : test_game.s
+
+# target to generate assembly for a file
+test_game.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_game.cpp.s
+.PHONY : test_game.cpp.s
+
+test_load_graphics.o: test_load_graphics.cpp.o
+
+.PHONY : test_load_graphics.o
+
+# target to build an object file
+test_load_graphics.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.o
+.PHONY : test_load_graphics.cpp.o
+
+test_load_graphics.i: test_load_graphics.cpp.i
+
+.PHONY : test_load_graphics.i
+
+# target to preprocess a source file
+test_load_graphics.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.i
+.PHONY : test_load_graphics.cpp.i
+
+test_load_graphics.s: test_load_graphics.cpp.s
+
+.PHONY : test_load_graphics.s
+
+# target to generate assembly for a file
+test_load_graphics.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.s
+.PHONY : test_load_graphics.cpp.s
+
 test_map.o: test_map.cpp.o
 
 .PHONY : test_map.o
@@ -264,6 +318,12 @@ help:
 	@echo "... test_drawable.o"
 	@echo "... test_drawable.i"
 	@echo "... test_drawable.s"
+	@echo "... test_game.o"
+	@echo "... test_game.i"
+	@echo "... test_game.s"
+	@echo "... test_load_graphics.o"
+	@echo "... test_load_graphics.i"
+	@echo "... test_load_graphics.s"
 	@echo "... test_map.o"
 	@echo "... test_map.i"
 	@echo "... test_map.s"

@@ -4,6 +4,19 @@
 
 using namespace gosheep;
 
+Map::Map() {
+
+    for (int row; row < m_tilemap.size(); row++) {
+        m_tilemap[row].fill(TileType::regular);
+        m_sheeps[row].fill(SheepColor::none);
+    }
+    
+    gridpt origin;
+    origin.x = 0;
+    origin.y = 0;
+    SetSelectTile(origin);
+}
+
 void Map::PutSheepAt(gridpt position, SheepColor color) {
     m_sheeps[position.x][position.y] = color;
 }
@@ -14,6 +27,10 @@ void Map::RemoveSheepAt(gridpt position) {
 
 SheepColor Map::GetSheepColorAt(gridpt position) {
     return m_sheeps[position.x][position.y];
+}
+
+void Map::SetSelectTile(gridpt position) {
+    m_tilemap[position.x][position.y] = TileType::select;
 }
 
 gridpt Map::GetMapSize() {
