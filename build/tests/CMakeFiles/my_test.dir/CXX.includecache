@@ -37,6 +37,10 @@ array
 -
 extern/array_enumerator.hh
 -
+algorithm
+-
+cmath
+-
 
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
 SDL_main.h

@@ -144,6 +144,33 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
+test_array_enumerator.o: test_array_enumerator.cpp.o
+
+.PHONY : test_array_enumerator.o
+
+# target to build an object file
+test_array_enumerator.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.o
+.PHONY : test_array_enumerator.cpp.o
+
+test_array_enumerator.i: test_array_enumerator.cpp.i
+
+.PHONY : test_array_enumerator.i
+
+# target to preprocess a source file
+test_array_enumerator.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.i
+.PHONY : test_array_enumerator.cpp.i
+
+test_array_enumerator.s: test_array_enumerator.cpp.s
+
+.PHONY : test_array_enumerator.s
+
+# target to generate assembly for a file
+test_array_enumerator.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.s
+.PHONY : test_array_enumerator.cpp.s
+
 test_drawable.o: test_drawable.cpp.o
 
 .PHONY : test_drawable.o
@@ -315,6 +342,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
+	@echo "... test_array_enumerator.o"
+	@echo "... test_array_enumerator.i"
+	@echo "... test_array_enumerator.s"
 	@echo "... test_drawable.o"
 	@echo "... test_drawable.i"
 	@echo "... test_drawable.s"

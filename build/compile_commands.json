@@ -16,6 +16,11 @@
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_array_enumerator.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_array_enumerator.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_array_enumerator.cpp"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
   "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_drawable.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp",
   "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp"
 },
