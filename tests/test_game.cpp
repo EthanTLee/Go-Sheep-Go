@@ -116,24 +116,26 @@ std::vector<gridpt> FindAllPositionsOfSameColor(SheepColor color, sheepboard_t s
 std::vector<sheepgroup> FindSheepGroupsOf(SheepColor color, sheepboard_t sheepmap) {
     std::vector<sheepgroup> ret;
     auto all_positions = FindAllPositionsOfSameColor(color, sheepmap);
+    if (all_positions.size() !=0) {
 
-    sheepgroup group(color);
-    group.m_positions.push_back(all_positions[0]);
+        sheepgroup group(color);
+        group.m_positions.push_back(all_positions[0]);
 
-    for (int i{1}; i < all_positions.size(); i++) {
+        for (int i{1}; i < all_positions.size(); i++) {
 
-        if (std::abs(all_positions[i].x - all_positions[i-1].x) <= 1 &&
-            std::abs(all_positions[i].y - all_positions[i-1].y) <= 1) {
-            
-            group.m_positions.push_back(all_positions[i]);
+            if (std::abs(all_positions[i].x - all_positions[i-1].x) <= 1 &&
+                std::abs(all_positions[i].y - all_positions[i-1].y) <= 1) {
+                
+                group.m_positions.push_back(all_positions[i]);
+            }
+            else {
+                ret.push_back(group);
+                group = sheepgroup(color);
+                group.m_positions.push_back(all_positions[i]);
+            }
         }
-        else {
-            ret.push_back(group);
-            group = sheepgroup(color);
-            group.m_positions.push_back(all_positions[i]);
-        }
+        ret.push_back(group);
     }
-    ret.push_back(group);
 
     return ret;
 }
@@ -155,27 +157,18 @@ bool DoesSheepGroupHaveLiberties(sheepgroup group, sheepboard_t sheepmap) {
 }
 
 
-sheepboard_t DeleteSurroundedSheep(sheepboard_t sheepmap) {
+sheepboard_t DeleteSurroundedSheepOf(SheepColor color, sheepboard_t sheepmap) {
     sheepboard_t ret = sheepmap;
     
-    auto groups_b = FindSheepGroupsOf(SheepColor::black, sheepmap);
-    auto groups_w = FindSheepGroupsOf(SheepColor::white, sheepmap);
+    auto groups = FindSheepGroupsOf(color, sheepmap);
 
-    for (auto e : groups_b) {
+    for (auto e : groups) {
         if (DoesSheepGroupHaveLiberties(e,sheepmap) == false) {
             for (auto p : e.m_positions) {
                 sheepmap[p.x][p.y] = SheepColor::none;
             }
         }
     }
-   for (auto e : groups_w) {
-        if (DoesSheepGroupHaveLiberties(e,sheepmap) == false) {
-            for (auto p : e.m_positions) {
-                sheepmap[p.x][p.y] = SheepColor::none;
-            }
-        }
-    }
-
     return ret;
 }
 
@@ -227,7 +220,6 @@ class Game {
     }
 
     void Update() {
-        m_sheepmap = DeleteSurroundedSheep(m_sheepmap);
         m_tilemap = gameboard_t{TileType::regular};
         m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] = TileType::select;
 
@@ -257,6 +249,8 @@ class Game {
                     else {
                         m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::white;
                     }
+                    m_sheepmap = DeleteSurroundedSheepOf(SheepColor::black, m_sheepmap);
+                    m_sheepmap = DeleteSurroundedSheepOf(SheepColor::white, m_sheepmap);
                 }
             }
             
