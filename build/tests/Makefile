@@ -252,6 +252,33 @@ test_load_graphics.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.s
 .PHONY : test_load_graphics.cpp.s
 
+test_map_stuff.o: test_map_stuff.cpp.o
+
+.PHONY : test_map_stuff.o
+
+# target to build an object file
+test_map_stuff.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_stuff.cpp.o
+.PHONY : test_map_stuff.cpp.o
+
+test_map_stuff.i: test_map_stuff.cpp.i
+
+.PHONY : test_map_stuff.i
+
+# target to preprocess a source file
+test_map_stuff.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_stuff.cpp.i
+.PHONY : test_map_stuff.cpp.i
+
+test_map_stuff.s: test_map_stuff.cpp.s
+
+.PHONY : test_map_stuff.s
+
+# target to generate assembly for a file
+test_map_stuff.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_stuff.cpp.s
+.PHONY : test_map_stuff.cpp.s
+
 test_window.o: test_window.cpp.o
 
 .PHONY : test_window.o
@@ -300,6 +327,9 @@ help:
 	@echo "... test_load_graphics.o"
 	@echo "... test_load_graphics.i"
 	@echo "... test_load_graphics.s"
+	@echo "... test_map_stuff.o"
+	@echo "... test_map_stuff.i"
+	@echo "... test_map_stuff.s"
 	@echo "... test_window.o"
 	@echo "... test_window.i"
 	@echo "... test_window.s"

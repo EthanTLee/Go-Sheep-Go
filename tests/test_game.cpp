@@ -20,8 +20,6 @@ struct GameDrawables {
 };
 
 
-
-
 class Game {
 
     public:
@@ -68,6 +66,8 @@ class Game {
     }
 
     void Update() {
+        m_sheepmap = DeleteSurroundedSheepOf(SheepColor::black, m_sheepmap);
+        m_sheepmap = DeleteSurroundedSheepOf(SheepColor::white, m_sheepmap);
         m_tilemap = gameboard_t{TileType::regular};
         m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] = TileType::select;
 
@@ -97,8 +97,6 @@ class Game {
                     else {
                         m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::white;
                     }
-                    m_sheepmap = DeleteSurroundedSheepOf(SheepColor::black, m_sheepmap);
-                    m_sheepmap = DeleteSurroundedSheepOf(SheepColor::white, m_sheepmap);
                 }
             }
             

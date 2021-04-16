@@ -86,7 +86,7 @@ struct sheepgroup {
 
 };
 
-std::vector<gridpt> FindAllPositionsOfSameColor(SheepColor color, sheepboard_t sheepmap){
+inline std::vector<gridpt> FindAllPositionsOfSameColor(SheepColor color, sheepboard_t sheepmap){
     std::vector<gridpt> ret;
     for (auto [row, col] : array_helpers::enumarate(sheepmap)) {
         if (sheepmap[row][col] == color) {
@@ -96,7 +96,7 @@ std::vector<gridpt> FindAllPositionsOfSameColor(SheepColor color, sheepboard_t s
     return ret;
 }
 
-std::vector<sheepgroup> FindSheepGroupsOf(SheepColor color, sheepboard_t sheepmap) {
+inline std::vector<sheepgroup> FindSheepGroupsOf(SheepColor color, sheepboard_t sheepmap) {
     std::vector<sheepgroup> ret;
     auto all_positions = FindAllPositionsOfSameColor(color, sheepmap);
     if (all_positions.size() !=0) {
@@ -123,7 +123,7 @@ std::vector<sheepgroup> FindSheepGroupsOf(SheepColor color, sheepboard_t sheepma
     return ret;
 }
 
-bool DoesSheepGroupHaveLiberties(sheepgroup group, sheepboard_t sheepmap) {
+inline bool DoesSheepGroupHaveLiberties(sheepgroup group, sheepboard_t sheepmap) {
     bool ret = false;
     for (auto e : group.m_positions) {
         surroundingsheep surround(e, sheepmap);
@@ -139,7 +139,7 @@ bool DoesSheepGroupHaveLiberties(sheepgroup group, sheepboard_t sheepmap) {
     return ret;
 }
 
-sheepboard_t DeleteSurroundedSheepOf(SheepColor color, sheepboard_t sheepmap) {
+inline sheepboard_t DeleteSurroundedSheepOf(SheepColor color, sheepboard_t sheepmap) {
     sheepboard_t ret = sheepmap;
     
     auto groups = FindSheepGroupsOf(color, sheepmap);
@@ -147,7 +147,7 @@ sheepboard_t DeleteSurroundedSheepOf(SheepColor color, sheepboard_t sheepmap) {
     for (auto e : groups) {
         if (DoesSheepGroupHaveLiberties(e,sheepmap) == false) {
             for (auto p : e.m_positions) {
-                sheepmap[p.x][p.y] = SheepColor::none;
+                ret[p.x][p.y] = SheepColor::none;
             }
         }
     }

@@ -78,6 +78,10 @@ struct gridpt : public point {
         x = x_;
         y = y_;
     }
+
+    bool operator==(const gridpt& p) const {
+        return (x == p.x) && (y == p.y);    
+    }
 };
 
 struct sizept : public pixelpt {};
