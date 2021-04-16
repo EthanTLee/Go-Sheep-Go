@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_test.dir/test_drawable.cpp.o"
   "CMakeFiles/my_test.dir/test_game.cpp.o"
   "CMakeFiles/my_test.dir/test_load_graphics.cpp.o"
-  "CMakeFiles/my_test.dir/test_map.cpp.o"
-  "CMakeFiles/my_test.dir/test_map_drawer.cpp.o"
   "CMakeFiles/my_test.dir/test_window.cpp.o"
   "my_test"
   "my_test.pdb"

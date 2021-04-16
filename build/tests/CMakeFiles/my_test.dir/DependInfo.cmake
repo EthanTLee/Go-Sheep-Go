@@ -8,8 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_drawable.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_game.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_load_graphics.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.o"
-  "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_map.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_map.cpp.o"
-  "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_map_drawer.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_map_drawer.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_window.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_window.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

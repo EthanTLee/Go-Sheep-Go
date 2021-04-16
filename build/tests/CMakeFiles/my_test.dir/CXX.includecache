@@ -22,15 +22,7 @@ SDL2/SDL_image.h
 string
 -
 
-../core_lib/includes/extern/array_enumerator.hh
-tuple
--
-
-/Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp
-catch.hpp
-/Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
-GoSheepGo/Drawable.hh
--
+../core_lib/includes/GoSheepGo/MapHelpers.hh
 GoSheepGo/GoSheepHelpers.hh
 -
 array
@@ -40,6 +32,18 @@ extern/array_enumerator.hh
 algorithm
 -
 cmath
+-
+
+../core_lib/includes/extern/array_enumerator.hh
+tuple
+-
+
+/Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp
+catch.hpp
+/Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
+GoSheepGo/Drawable.hh
+-
+GoSheepGo/MapHelpers.hh
 -
 
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h

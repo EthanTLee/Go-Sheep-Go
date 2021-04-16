@@ -171,33 +171,6 @@ src/Drawable.cc.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.s
 .PHONY : src/Drawable.cc.s
 
-src/Map.o: src/Map.cc.o
-
-.PHONY : src/Map.o
-
-# target to build an object file
-src/Map.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Map.cc.o
-.PHONY : src/Map.cc.o
-
-src/Map.i: src/Map.cc.i
-
-.PHONY : src/Map.i
-
-# target to preprocess a source file
-src/Map.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Map.cc.i
-.PHONY : src/Map.cc.i
-
-src/Map.s: src/Map.cc.s
-
-.PHONY : src/Map.s
-
-# target to generate assembly for a file
-src/Map.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Map.cc.s
-.PHONY : src/Map.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,9 +183,6 @@ help:
 	@echo "... src/Drawable.o"
 	@echo "... src/Drawable.i"
 	@echo "... src/Drawable.s"
-	@echo "... src/Map.o"
-	@echo "... src/Map.i"
-	@echo "... src/Map.s"
 .PHONY : help
 
 
