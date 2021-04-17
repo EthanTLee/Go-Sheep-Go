@@ -8,12 +8,18 @@
 
 namespace gosheep {
 
+enum class SheepColor {none, black, white};
+
+enum class TileType {regular, select, wall};
+
+using player_number = int;
+
 inline pixelpt ConvertTileGridToPixel(gridpt grid_position) {
 
     pixelpt ret;
 
     pixelpt offset;
-    offset.x = 100;
+    offset.x = 50;
     offset.y = 200;
     sizept tile_size;
     tile_size.x = 98;
@@ -30,7 +36,7 @@ inline pixelpt ConvertSheepGridToPixel(gridpt grid_position) {
     pixelpt ret;
 
     pixelpt offset;
-    offset.x = 100;
+    offset.x = 60;
     offset.y = 200;
     sizept tile_size;
     tile_size.x = 98;
@@ -51,7 +57,7 @@ struct mapsize {
     size_t number_of_columns = 0;
 };
 
-constexpr mapsize gamemap_size(5, 5);
+constexpr mapsize gamemap_size(6, 6);
 
 template <typename T>
 using genericboard_t = std::array <
@@ -96,6 +102,8 @@ inline std::vector<gridpt> FindAllPositionsOfSameColor(SheepColor color, sheepbo
     return ret;
 }
 
+
+
 inline std::vector<sheepgroup> FindSheepGroupsOf(SheepColor color, sheepboard_t sheepmap) {
     std::vector<sheepgroup> ret;
     auto all_positions = FindAllPositionsOfSameColor(color, sheepmap);
@@ -123,35 +131,8 @@ inline std::vector<sheepgroup> FindSheepGroupsOf(SheepColor color, sheepboard_t 
     return ret;
 }
 
-inline bool DoesSheepGroupHaveLiberties(sheepgroup group, sheepboard_t sheepmap) {
-    bool ret = false;
-    for (auto e : group.m_positions) {
-        surroundingsheep surround(e, sheepmap);
-        if (
-            surround.above == SheepColor::none ||
-            surround.below == SheepColor::none ||
-            surround.right == SheepColor::none ||
-            surround.left  == SheepColor::none
-        ) {
-            ret = true;
-        }
-    }
-    return ret;
-}
 
-inline sheepboard_t DeleteSurroundedSheepOf(SheepColor color, sheepboard_t sheepmap) {
-    sheepboard_t ret = sheepmap;
-    
-    auto groups = FindSheepGroupsOf(color, sheepmap);
 
-    for (auto e : groups) {
-        if (DoesSheepGroupHaveLiberties(e,sheepmap) == false) {
-            for (auto p : e.m_positions) {
-                ret[p.x][p.y] = SheepColor::none;
-            }
-        }
-    }
-    return ret;
-}
+
 
 } // namespace gosheep

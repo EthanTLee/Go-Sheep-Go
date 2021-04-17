@@ -33,11 +33,7 @@ inline void Continue_Until_Quit() {
 
 // Gameboard Helpers
 
-enum class SheepColor {none, black, white};
 
-enum class TileType {regular, select};
-
-using player_number = int;
 
 // End Gameboard Helpers
 

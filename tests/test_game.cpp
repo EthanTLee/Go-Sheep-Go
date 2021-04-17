@@ -1,6 +1,7 @@
 #include "catch.hpp"
 #include <GoSheepGo/Drawable.hh>
 #include <GoSheepGo/MapHelpers.hh>
+#include <GoSheepGo/clusterfinder.hh>
 
 using namespace gosheep;
 
@@ -11,12 +12,14 @@ struct GameDrawables {
         grass_select = Drawable("../../res/grass_sel.png");
         sheep_white = Drawable("../../res/sheep_white.png");
         sheep_black = Drawable("../../res/sheep_black.png");
+        wall = Drawable("../../res/wall.png");
     }
 
     Drawable grass_regular;
     Drawable grass_select;
     Drawable sheep_white;
     Drawable sheep_black;
+    Drawable wall;
 };
 
 
@@ -57,18 +60,36 @@ class Game {
         
         m_window = Make_Window();
         m_window_surf = SDL_GetWindowSurface(m_window);
-        m_tilemap = gameboard_t{TileType::regular};
+        m_tilemap = gameboard_t{{
+            {TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall}
+            
+        }};
+
         m_sheepmap = sheepboard_t{SheepColor::none};
-        m_select_tile_pos = gridpt{0,0};
+        m_select_tile_pos = gridpt{1,1};
         m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] = TileType::select;
         m_active_sheep_color = SheepColor::black;
         m_turn_number = int{0};
     }
 
     void Update() {
-        m_sheepmap = DeleteSurroundedSheepOf(SheepColor::black, m_sheepmap);
-        m_sheepmap = DeleteSurroundedSheepOf(SheepColor::white, m_sheepmap);
-        m_tilemap = gameboard_t{TileType::regular};
+        
+
+        m_tilemap = gameboard_t{{
+            {TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::regular, TileType::regular, TileType::regular, TileType::regular, TileType::wall},
+            {TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall, TileType::wall}
+            
+        }};
+        
         m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] = TileType::select;
 
         while(SDL_PollEvent(&m_user_input) != 0) {
@@ -78,25 +99,23 @@ class Game {
             else if (m_user_input.type == SDL_KEYDOWN) {
                 
                 if (m_user_input.key.keysym.sym == SDLK_LEFT) {
-                    m_select_tile_pos.x -= 1;
+                    MoveSelectLeft();
                 }
                 if (m_user_input.key.keysym.sym == SDLK_RIGHT) {
-                    m_select_tile_pos.x += 1;
+                    MoveSelectRight();
                 }
                 if (m_user_input.key.keysym.sym == SDLK_UP) {
-                    m_select_tile_pos.y += 1;
+                    MoveSelectUp();
                 }
                 if (m_user_input.key.keysym.sym == SDLK_DOWN) {
-                    m_select_tile_pos.y -= 1;
+                    MoveSelectDown();
                 }
                 if (m_user_input.key.keysym.sym == SDLK_SPACE) {
-                    m_turn_number += 1;
-                    if (m_turn_number%2 == 0) {
-                        m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::black;
-                    }
-                    else {
-                        m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = SheepColor::white;
-                    }
+
+                    m_sheepmap[m_select_tile_pos.x][m_select_tile_pos.y] = m_active_sheep_color;
+                    m_sheepmap = DeleteSurroundedSheepOf(m_sheepmap, m_tilemap);
+                    AdvanceTurn();
+                    
                 }
             }
             
@@ -117,6 +136,9 @@ class Game {
             else if (m_tilemap[row][col] == TileType::select) {
                 m_drawables.grass_select.Draw(tile_pixel_pos,m_window_surf);
             }
+            else if (m_tilemap[row][col] == TileType::wall) {
+                m_drawables.wall.Draw(tile_pixel_pos,m_window_surf);
+            }
             
             if (m_sheepmap[row][col] == SheepColor::white) {
                 m_drawables.sheep_white.Draw(sheep_pixel_pos,m_window_surf);
@@ -126,6 +148,41 @@ class Game {
             }
         }
         SDL_UpdateWindowSurface(m_window);
+    }
+    void MoveSelectRight(){
+        m_select_tile_pos.x += 1;
+        if (m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] == TileType::wall) {
+            m_select_tile_pos.x -= 1;
+        }
+        
+    }
+    void MoveSelectLeft(){
+        m_select_tile_pos.x -= 1;
+        if (m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] == TileType::wall) {
+            m_select_tile_pos.x += 1;
+        }
+    }
+    void MoveSelectUp(){
+        m_select_tile_pos.y += 1;
+        if (m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] == TileType::wall) {
+            m_select_tile_pos.y -= 1;
+        }
+    }
+    void MoveSelectDown(){
+        m_select_tile_pos.y -= 1;
+        if (m_tilemap[m_select_tile_pos.x][m_select_tile_pos.y] == TileType::wall) {
+            m_select_tile_pos.y += 1;
+        }
+    }
+
+    void AdvanceTurn() {
+        m_turn_number +=1;
+        if(m_turn_number % 2 == 0) {
+            m_active_sheep_color = SheepColor::black;
+        }
+        else {
+            m_active_sheep_color = SheepColor::white;
+        }
     }
 };
 

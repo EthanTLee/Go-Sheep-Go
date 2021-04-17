@@ -171,6 +171,33 @@ test_array_enumerator.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.s
 .PHONY : test_array_enumerator.cpp.s
 
+test_clusterfinder.o: test_clusterfinder.cpp.o
+
+.PHONY : test_clusterfinder.o
+
+# target to build an object file
+test_clusterfinder.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_clusterfinder.cpp.o
+.PHONY : test_clusterfinder.cpp.o
+
+test_clusterfinder.i: test_clusterfinder.cpp.i
+
+.PHONY : test_clusterfinder.i
+
+# target to preprocess a source file
+test_clusterfinder.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_clusterfinder.cpp.i
+.PHONY : test_clusterfinder.cpp.i
+
+test_clusterfinder.s: test_clusterfinder.cpp.s
+
+.PHONY : test_clusterfinder.s
+
+# target to generate assembly for a file
+test_clusterfinder.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_clusterfinder.cpp.s
+.PHONY : test_clusterfinder.cpp.s
+
 test_drawable.o: test_drawable.cpp.o
 
 .PHONY : test_drawable.o
@@ -318,6 +345,9 @@ help:
 	@echo "... test_array_enumerator.o"
 	@echo "... test_array_enumerator.i"
 	@echo "... test_array_enumerator.s"
+	@echo "... test_clusterfinder.o"
+	@echo "... test_clusterfinder.i"
+	@echo "... test_clusterfinder.s"
 	@echo "... test_drawable.o"
 	@echo "... test_drawable.i"
 	@echo "... test_drawable.s"

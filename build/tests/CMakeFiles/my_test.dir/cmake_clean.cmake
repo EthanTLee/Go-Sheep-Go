@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_test.dir/test_array_enumerator.cpp.o"
+  "CMakeFiles/my_test.dir/test_clusterfinder.cpp.o"
   "CMakeFiles/my_test.dir/test_drawable.cpp.o"
   "CMakeFiles/my_test.dir/test_game.cpp.o"
   "CMakeFiles/my_test.dir/test_load_graphics.cpp.o"

@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../core_lib/includes/GoSheepGo/Drawable.hh
-GoSheepGo/GoSheepHelpers.hh
--
-string
--
-
 ../core_lib/includes/GoSheepGo/GoSheepHelpers.hh
 exception
 -
@@ -34,16 +28,24 @@ algorithm
 cmath
 -
 
+../core_lib/includes/GoSheepGo/clusterfinder.hh
+vector
+-
+GoSheepGo/GoSheepHelpers.hh
+-
+GoSheepGo/MapHelpers.hh
+-
+
 ../core_lib/includes/extern/array_enumerator.hh
 tuple
 -
 
-/Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp
+/Users/peepeepoopoo/projects/GoSheepGo/tests/test_clusterfinder.cpp
 catch.hpp
 /Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
-GoSheepGo/Drawable.hh
--
 GoSheepGo/MapHelpers.hh
+-
+GoSheepGo/clusterfinder.hh
 -
 
 /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
