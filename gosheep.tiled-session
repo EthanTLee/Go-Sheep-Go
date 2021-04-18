@@ -1,0 +1,51 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "gosheeptilemap.tmx",
+    "expandedProjectPaths": [
+        "res"
+    ],
+    "fileStates": {
+        "gosheeptilemap.tmx": {
+            "scale": 0.6482,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 427.3372415921012,
+                "y": 250.69423017587164
+            }
+        },
+        "grass.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "upperwall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/peepeepoopoo/projects/GoSheepGo/res",
+    "map.height": 10,
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": null,
+    "map.tileHeight": 45,
+    "map.tileWidth": 99,
+    "map.width": 10,
+    "openFiles": [
+        "gosheeptilemap.tmx",
+        "grass.tsx",
+        "upperwall.tsx"
+    ],
+    "project": "gosheep.tiled-project",
+    "recentFiles": [
+        "upperwall.tsx",
+        "grass.tsx",
+        "gosheeptilemap.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 45,
+        "width": 99
+    }
+}

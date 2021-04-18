@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../core_lib/includes/GoSheepGo/Drawable.hh
+GoSheepGo/GoSheepHelpers.hh
+-
+string
+-
+
 ../core_lib/includes/GoSheepGo/GoSheepHelpers.hh
 exception
 -
@@ -44,6 +50,32 @@ tuple
 catch.hpp
 /Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
 GoSheepGo/MapHelpers.hh
+-
+GoSheepGo/clusterfinder.hh
+-
+
+/Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp
+catch.hpp
+/Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
+GoSheepGo/Drawable.hh
+-
+GoSheepGo/MapHelpers.hh
+-
+GoSheepGo/clusterfinder.hh
+-
+
+/Users/peepeepoopoo/projects/GoSheepGo/tests/test_map_stuff.cpp
+catch.hpp
+/Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
+array
+-
+GoSheepGo/MapHelpers.hh
+-
+extern/array_enumerator.hh
+-
+iostream
+-
+algorithm
 -
 GoSheepGo/clusterfinder.hh
 -

@@ -44,7 +44,7 @@ inline std::vector<sheepgroup> ClusterFinder(const sheepboard_t& sheeps, SheepCo
             ret.emplace_back(color);
             ret.back().m_positions.emplace_back(row,col);
         }
-        for (const auto& surrounding : GetSurrounding({5,5}, gridpt(row,col))) {
+        for (const auto& surrounding : GetSurrounding({20,20}, gridpt(row,col))) {
             if(sheeps[surrounding.x][surrounding.y] == color && !InCluster(ret, surrounding)) {
                 ret.back().m_positions.push_back(surrounding);
             }
@@ -71,39 +71,55 @@ inline bool DoesSheepGroupHaveLiberties(sheepgroup group, sheepboard_t sheepmap,
     }
 
     for (auto& p : positions_that_need_to_be_open) {
-        if ((sheepmap[p.x][p.y] == SheepColor::none) && (tilemap[p.x][p.y] != TileType::wall)) {
+        if (
+            (sheepmap[p.x][p.y] == SheepColor::none) && 
+            (tilemap[p.x][p.y] != TileType::wall_top) &&
+            (tilemap[p.x][p.y] != TileType::wall_bot) &&
+            (tilemap[p.x][p.y] != TileType::wall_right) &&
+            (tilemap[p.x][p.y] != TileType::wall_left)
+        ) {
             return true;
         }
     }
     return false;
 }
 
-inline sheepboard_t DeleteSurroundedSheepOf(sheepboard_t sheepmap, gameboard_t tilemap) {
+inline sheepboard_t DeleteSurroundedSheepOf(SheepColor color, sheepboard_t sheepmap, gameboard_t tilemap) {
     sheepboard_t ret = sheepmap;
     
-    auto clusters_white = ClusterFinder(sheepmap, SheepColor::white);
-    auto clusters_black = ClusterFinder(sheepmap, SheepColor::black);
+    auto clusters = ClusterFinder(sheepmap, color);
 
     std::vector<gridpt> trashbin; 
 
-    for (auto e : clusters_white) {
+    for (auto e : clusters) {
         if (DoesSheepGroupHaveLiberties(e,sheepmap, tilemap) == false) {
             for (auto p : e.m_positions) {
                 trashbin.push_back(p);
             }
         }
     }
-    for (auto e : clusters_black) {
-        if (DoesSheepGroupHaveLiberties(e,sheepmap, tilemap) == false) {
-            for (auto p : e.m_positions) {
-                trashbin.push_back(p);
-            }
-        }
-    }
+
     for (auto p : trashbin) {
         ret[p.x][p.y] = SheepColor::none;
     }
     return ret;
+}
+
+inline bool WouldPuttingSheepHereSelfCapture(gridpt position, SheepColor color, sheepboard_t sheepmap, gameboard_t tilemap) {
+    sheepmap[position.x][position.y] = color;
+
+    if (color == SheepColor::black) {
+        sheepmap = DeleteSurroundedSheepOf(SheepColor::white, sheepmap, tilemap);
+    }
+    else if (color == SheepColor::white) {
+        sheepmap = DeleteSurroundedSheepOf(SheepColor::black, sheepmap, tilemap);
+    }
+    
+    if (sheepmap != DeleteSurroundedSheepOf(color, sheepmap, tilemap)) {
+        return true;
+    }
+
+    return false;
 }
 
 }

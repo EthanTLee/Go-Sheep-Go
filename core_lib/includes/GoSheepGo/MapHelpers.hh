@@ -10,7 +10,7 @@ namespace gosheep {
 
 enum class SheepColor {none, black, white};
 
-enum class TileType {regular, select, wall};
+enum class TileType {regular, select, wall, error, wall_top, wall_left, wall_bot, wall_right};
 
 using player_number = int;
 
