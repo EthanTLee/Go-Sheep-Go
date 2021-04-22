@@ -144,32 +144,59 @@ GoSheepGo/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/build
 .PHONY : GoSheepGo/fast
 
-src/Drawable.o: src/Drawable.cc.o
+GoSheepGo/Core/Drawable.o: GoSheepGo/Core/Drawable.cc.o
 
-.PHONY : src/Drawable.o
+.PHONY : GoSheepGo/Core/Drawable.o
 
 # target to build an object file
-src/Drawable.cc.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o
-.PHONY : src/Drawable.cc.o
+GoSheepGo/Core/Drawable.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o
+.PHONY : GoSheepGo/Core/Drawable.cc.o
 
-src/Drawable.i: src/Drawable.cc.i
+GoSheepGo/Core/Drawable.i: GoSheepGo/Core/Drawable.cc.i
 
-.PHONY : src/Drawable.i
+.PHONY : GoSheepGo/Core/Drawable.i
 
 # target to preprocess a source file
-src/Drawable.cc.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.i
-.PHONY : src/Drawable.cc.i
+GoSheepGo/Core/Drawable.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.i
+.PHONY : GoSheepGo/Core/Drawable.cc.i
 
-src/Drawable.s: src/Drawable.cc.s
+GoSheepGo/Core/Drawable.s: GoSheepGo/Core/Drawable.cc.s
 
-.PHONY : src/Drawable.s
+.PHONY : GoSheepGo/Core/Drawable.s
 
 # target to generate assembly for a file
-src/Drawable.cc.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.s
-.PHONY : src/Drawable.cc.s
+GoSheepGo/Core/Drawable.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.s
+.PHONY : GoSheepGo/Core/Drawable.cc.s
+
+GoSheepGo/Core/GameWindow.o: GoSheepGo/Core/GameWindow.cc.o
+
+.PHONY : GoSheepGo/Core/GameWindow.o
+
+# target to build an object file
+GoSheepGo/Core/GameWindow.cc.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o
+.PHONY : GoSheepGo/Core/GameWindow.cc.o
+
+GoSheepGo/Core/GameWindow.i: GoSheepGo/Core/GameWindow.cc.i
+
+.PHONY : GoSheepGo/Core/GameWindow.i
+
+# target to preprocess a source file
+GoSheepGo/Core/GameWindow.cc.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.i
+.PHONY : GoSheepGo/Core/GameWindow.cc.i
+
+GoSheepGo/Core/GameWindow.s: GoSheepGo/Core/GameWindow.cc.s
+
+.PHONY : GoSheepGo/Core/GameWindow.s
+
+# target to generate assembly for a file
+GoSheepGo/Core/GameWindow.cc.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.s
+.PHONY : GoSheepGo/Core/GameWindow.cc.s
 
 # Help Target
 help:
@@ -180,9 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GoSheepGo"
-	@echo "... src/Drawable.o"
-	@echo "... src/Drawable.i"
-	@echo "... src/Drawable.s"
+	@echo "... GoSheepGo/Core/Drawable.o"
+	@echo "... GoSheepGo/Core/Drawable.i"
+	@echo "... GoSheepGo/Core/Drawable.s"
+	@echo "... GoSheepGo/Core/GameWindow.o"
+	@echo "... GoSheepGo/Core/GameWindow.i"
+	@echo "... GoSheepGo/Core/GameWindow.s"
 .PHONY : help
 
 

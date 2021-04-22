@@ -1,10 +1,10 @@
-file(GLOB_RECURSE SRCS src/ *.c *.cpp *.cc *.h *.hpp) 
+file(GLOB_RECURSE SRCS *.c *.cpp *.cc *.h *.hh *.hpp) 
 
 add_library(${PROJECT_NAME} SHARED ${SRCS})
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
 
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/includes/ )
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/ )
 
 target_compile_definitions(${PROJECT_NAME}  PUBLIC ${PROJECT_NAME})
 

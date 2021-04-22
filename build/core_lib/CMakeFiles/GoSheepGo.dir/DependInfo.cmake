@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc" "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib/CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o"
+  "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/Drawable.cc" "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o"
+  "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/GameWindow.cc" "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -16,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../core_lib/includes"
+  "../core_lib"
   "/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include"
   "/Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2"
   )

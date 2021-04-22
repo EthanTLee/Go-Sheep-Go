@@ -144,194 +144,59 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
-test_array_enumerator.o: test_array_enumerator.cpp.o
+test_GameWindow.o: test_GameWindow.cpp.o
 
-.PHONY : test_array_enumerator.o
-
-# target to build an object file
-test_array_enumerator.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.o
-.PHONY : test_array_enumerator.cpp.o
-
-test_array_enumerator.i: test_array_enumerator.cpp.i
-
-.PHONY : test_array_enumerator.i
-
-# target to preprocess a source file
-test_array_enumerator.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.i
-.PHONY : test_array_enumerator.cpp.i
-
-test_array_enumerator.s: test_array_enumerator.cpp.s
-
-.PHONY : test_array_enumerator.s
-
-# target to generate assembly for a file
-test_array_enumerator.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_array_enumerator.cpp.s
-.PHONY : test_array_enumerator.cpp.s
-
-test_clusterfinder.o: test_clusterfinder.cpp.o
-
-.PHONY : test_clusterfinder.o
+.PHONY : test_GameWindow.o
 
 # target to build an object file
-test_clusterfinder.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_clusterfinder.cpp.o
-.PHONY : test_clusterfinder.cpp.o
+test_GameWindow.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_GameWindow.cpp.o
+.PHONY : test_GameWindow.cpp.o
 
-test_clusterfinder.i: test_clusterfinder.cpp.i
+test_GameWindow.i: test_GameWindow.cpp.i
 
-.PHONY : test_clusterfinder.i
+.PHONY : test_GameWindow.i
 
 # target to preprocess a source file
-test_clusterfinder.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_clusterfinder.cpp.i
-.PHONY : test_clusterfinder.cpp.i
+test_GameWindow.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_GameWindow.cpp.i
+.PHONY : test_GameWindow.cpp.i
 
-test_clusterfinder.s: test_clusterfinder.cpp.s
+test_GameWindow.s: test_GameWindow.cpp.s
 
-.PHONY : test_clusterfinder.s
+.PHONY : test_GameWindow.s
 
 # target to generate assembly for a file
-test_clusterfinder.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_clusterfinder.cpp.s
-.PHONY : test_clusterfinder.cpp.s
+test_GameWindow.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_GameWindow.cpp.s
+.PHONY : test_GameWindow.cpp.s
 
-test_drawable.o: test_drawable.cpp.o
+test_main.o: test_main.cpp.o
 
-.PHONY : test_drawable.o
+.PHONY : test_main.o
 
 # target to build an object file
-test_drawable.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.o
-.PHONY : test_drawable.cpp.o
+test_main.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_main.cpp.o
+.PHONY : test_main.cpp.o
 
-test_drawable.i: test_drawable.cpp.i
+test_main.i: test_main.cpp.i
 
-.PHONY : test_drawable.i
-
-# target to preprocess a source file
-test_drawable.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.i
-.PHONY : test_drawable.cpp.i
-
-test_drawable.s: test_drawable.cpp.s
-
-.PHONY : test_drawable.s
-
-# target to generate assembly for a file
-test_drawable.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_drawable.cpp.s
-.PHONY : test_drawable.cpp.s
-
-test_game.o: test_game.cpp.o
-
-.PHONY : test_game.o
-
-# target to build an object file
-test_game.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_game.cpp.o
-.PHONY : test_game.cpp.o
-
-test_game.i: test_game.cpp.i
-
-.PHONY : test_game.i
+.PHONY : test_main.i
 
 # target to preprocess a source file
-test_game.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_game.cpp.i
-.PHONY : test_game.cpp.i
+test_main.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_main.cpp.i
+.PHONY : test_main.cpp.i
 
-test_game.s: test_game.cpp.s
+test_main.s: test_main.cpp.s
 
-.PHONY : test_game.s
-
-# target to generate assembly for a file
-test_game.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_game.cpp.s
-.PHONY : test_game.cpp.s
-
-test_load_graphics.o: test_load_graphics.cpp.o
-
-.PHONY : test_load_graphics.o
-
-# target to build an object file
-test_load_graphics.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.o
-.PHONY : test_load_graphics.cpp.o
-
-test_load_graphics.i: test_load_graphics.cpp.i
-
-.PHONY : test_load_graphics.i
-
-# target to preprocess a source file
-test_load_graphics.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.i
-.PHONY : test_load_graphics.cpp.i
-
-test_load_graphics.s: test_load_graphics.cpp.s
-
-.PHONY : test_load_graphics.s
+.PHONY : test_main.s
 
 # target to generate assembly for a file
-test_load_graphics.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_load_graphics.cpp.s
-.PHONY : test_load_graphics.cpp.s
-
-test_map_stuff.o: test_map_stuff.cpp.o
-
-.PHONY : test_map_stuff.o
-
-# target to build an object file
-test_map_stuff.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_stuff.cpp.o
-.PHONY : test_map_stuff.cpp.o
-
-test_map_stuff.i: test_map_stuff.cpp.i
-
-.PHONY : test_map_stuff.i
-
-# target to preprocess a source file
-test_map_stuff.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_stuff.cpp.i
-.PHONY : test_map_stuff.cpp.i
-
-test_map_stuff.s: test_map_stuff.cpp.s
-
-.PHONY : test_map_stuff.s
-
-# target to generate assembly for a file
-test_map_stuff.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_map_stuff.cpp.s
-.PHONY : test_map_stuff.cpp.s
-
-test_window.o: test_window.cpp.o
-
-.PHONY : test_window.o
-
-# target to build an object file
-test_window.cpp.o:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_window.cpp.o
-.PHONY : test_window.cpp.o
-
-test_window.i: test_window.cpp.i
-
-.PHONY : test_window.i
-
-# target to preprocess a source file
-test_window.cpp.i:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_window.cpp.i
-.PHONY : test_window.cpp.i
-
-test_window.s: test_window.cpp.s
-
-.PHONY : test_window.s
-
-# target to generate assembly for a file
-test_window.cpp.s:
-	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_window.cpp.s
-.PHONY : test_window.cpp.s
+test_main.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_main.cpp.s
+.PHONY : test_main.cpp.s
 
 # Help Target
 help:
@@ -342,27 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
-	@echo "... test_array_enumerator.o"
-	@echo "... test_array_enumerator.i"
-	@echo "... test_array_enumerator.s"
-	@echo "... test_clusterfinder.o"
-	@echo "... test_clusterfinder.i"
-	@echo "... test_clusterfinder.s"
-	@echo "... test_drawable.o"
-	@echo "... test_drawable.i"
-	@echo "... test_drawable.s"
-	@echo "... test_game.o"
-	@echo "... test_game.i"
-	@echo "... test_game.s"
-	@echo "... test_load_graphics.o"
-	@echo "... test_load_graphics.i"
-	@echo "... test_load_graphics.s"
-	@echo "... test_map_stuff.o"
-	@echo "... test_map_stuff.i"
-	@echo "... test_map_stuff.s"
-	@echo "... test_window.o"
-	@echo "... test_window.i"
-	@echo "... test_window.s"
+	@echo "... test_GameWindow.o"
+	@echo "... test_GameWindow.i"
+	@echo "... test_GameWindow.s"
+	@echo "... test_main.o"
+	@echo "... test_main.i"
+	@echo "... test_main.s"
 .PHONY : help
 
 

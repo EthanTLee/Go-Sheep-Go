@@ -1,47 +1,27 @@
 [
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -o CMakeFiles/GoSheep.dir/main.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/main.cpp",
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -o CMakeFiles/GoSheep.dir/main.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/main.cpp",
   "file": "/Users/peepeepoopoo/projects/GoSheepGo/main.cpp"
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
-  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++2a -o CMakeFiles/GoSheepGo.dir/src/Drawable.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/src/Drawable.cc"
+  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++2a -o CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/Drawable.cc",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/Drawable.cc"
+},
+{
+  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib",
+  "command": "/usr/bin/clang++ -DGoSheepGo -DGoSheepGo_EXPORTS -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=gnu++2a -o CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o -c /Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/GameWindow.cc",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/GameWindow.cc"
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_array_enumerator.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_array_enumerator.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_array_enumerator.cpp"
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_GameWindow.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_GameWindow.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_GameWindow.cpp"
 },
 {
   "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_clusterfinder.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_clusterfinder.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_clusterfinder.cpp"
-},
-{
-  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_drawable.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_drawable.cpp"
-},
-{
-  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_game.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_game.cpp"
-},
-{
-  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_load_graphics.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_load_graphics.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_load_graphics.cpp"
-},
-{
-  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_map_stuff.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_map_stuff.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_map_stuff.cpp"
-},
-{
-  "directory": "/Users/peepeepoopoo/projects/GoSheepGo/build/tests",
-  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib/includes -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_window.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_window.cpp",
-  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_window.cpp"
+  "command": "/usr/bin/clang++ -DGoSheepGo -I/Users/peepeepoopoo/projects/GoSheepGo/core_lib -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include -isystem /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -std=gnu++2a -o CMakeFiles/my_test.dir/test_main.cpp.o -c /Users/peepeepoopoo/projects/GoSheepGo/tests/test_main.cpp",
+  "file": "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_main.cpp"
 }
 ]
