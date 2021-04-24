@@ -1,3 +1,5 @@
+/*
+
 #include <GoSheepGo/Core/Drawable.hh>
 #include <exception>
 #include <string>
@@ -55,4 +57,4 @@ image Drawable::LoadImageFromDisk(std::string path_to_image) {
     return ret;
 }
 
-
+*/

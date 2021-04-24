@@ -144,6 +144,33 @@ my_test/fast:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/build
 .PHONY : my_test/fast
 
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 test_GameWindow.o: test_GameWindow.cpp.o
 
 .PHONY : test_GameWindow.o
@@ -198,6 +225,33 @@ test_main.cpp.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_main.cpp.s
 .PHONY : test_main.cpp.s
 
+test_tinyxml2.o: test_tinyxml2.cpp.o
+
+.PHONY : test_tinyxml2.o
+
+# target to build an object file
+test_tinyxml2.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tinyxml2.cpp.o
+.PHONY : test_tinyxml2.cpp.o
+
+test_tinyxml2.i: test_tinyxml2.cpp.i
+
+.PHONY : test_tinyxml2.i
+
+# target to preprocess a source file
+test_tinyxml2.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tinyxml2.cpp.i
+.PHONY : test_tinyxml2.cpp.i
+
+test_tinyxml2.s: test_tinyxml2.cpp.s
+
+.PHONY : test_tinyxml2.s
+
+# target to generate assembly for a file
+test_tinyxml2.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_test.dir/build.make tests/CMakeFiles/my_test.dir/test_tinyxml2.cpp.s
+.PHONY : test_tinyxml2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -207,12 +261,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_test"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 	@echo "... test_GameWindow.o"
 	@echo "... test_GameWindow.i"
 	@echo "... test_GameWindow.s"
 	@echo "... test_main.o"
 	@echo "... test_main.i"
 	@echo "... test_main.s"
+	@echo "... test_tinyxml2.o"
+	@echo "... test_tinyxml2.i"
+	@echo "... test_tinyxml2.s"
 .PHONY : help
 
 

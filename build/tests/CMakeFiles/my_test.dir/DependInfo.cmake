@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/peepeepoopoo/projects/GoSheepGo/tests/test.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_GameWindow.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_GameWindow.cpp.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_main.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_main.cpp.o"
+  "/Users/peepeepoopoo/projects/GoSheepGo/tests/test_tinyxml2.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/tests/CMakeFiles/my_test.dir/test_tinyxml2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

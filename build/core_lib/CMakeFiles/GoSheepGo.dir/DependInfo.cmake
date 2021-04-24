@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/Drawable.cc" "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o"
   "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/GoSheepGo/Core/GameWindow.cc" "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o"
+  "/Users/peepeepoopoo/projects/GoSheepGo/core_lib/extern/tinyxml2/tinyxml2.cpp" "/Users/peepeepoopoo/projects/GoSheepGo/build/core_lib/CMakeFiles/GoSheepGo.dir/extern/tinyxml2/tinyxml2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

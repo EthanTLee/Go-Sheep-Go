@@ -1,3 +1,5 @@
+/*
+
 #pragma once
 
 #include <GoSheepGo/GoSheepHelpers.hh>
@@ -28,3 +30,4 @@ class Drawable {
 
 } // namespace core
 
+*/

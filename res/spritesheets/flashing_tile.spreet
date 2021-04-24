@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spritesheet>
+
+    <path_to_image>flashing_tile.png</path_to_image>
+    <num_of_animes>1</num_of_animes>
+
+    <animation>
+        <name>Flashing Tile</name>
+        <num_of_frames>2</num_of_frames>
+        <frame_rate>1</frame_rate>
+        <frame_size>
+            <width>99</width>
+            <height>45</height>
+        </frame_size>
+        <position_of_first_frame>
+            <x>0</x>
+            <y>0</y>
+        </position_of_first_frame>
+    </animation>
+
+</spritesheet>

@@ -198,6 +198,33 @@ GoSheepGo/Core/GameWindow.cc.s:
 	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.s
 .PHONY : GoSheepGo/Core/GameWindow.cc.s
 
+extern/tinyxml2/tinyxml2.o: extern/tinyxml2/tinyxml2.cpp.o
+
+.PHONY : extern/tinyxml2/tinyxml2.o
+
+# target to build an object file
+extern/tinyxml2/tinyxml2.cpp.o:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/extern/tinyxml2/tinyxml2.cpp.o
+.PHONY : extern/tinyxml2/tinyxml2.cpp.o
+
+extern/tinyxml2/tinyxml2.i: extern/tinyxml2/tinyxml2.cpp.i
+
+.PHONY : extern/tinyxml2/tinyxml2.i
+
+# target to preprocess a source file
+extern/tinyxml2/tinyxml2.cpp.i:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/extern/tinyxml2/tinyxml2.cpp.i
+.PHONY : extern/tinyxml2/tinyxml2.cpp.i
+
+extern/tinyxml2/tinyxml2.s: extern/tinyxml2/tinyxml2.cpp.s
+
+.PHONY : extern/tinyxml2/tinyxml2.s
+
+# target to generate assembly for a file
+extern/tinyxml2/tinyxml2.cpp.s:
+	cd /Users/peepeepoopoo/projects/GoSheepGo/build && $(MAKE) $(MAKESILENT) -f core_lib/CMakeFiles/GoSheepGo.dir/build.make core_lib/CMakeFiles/GoSheepGo.dir/extern/tinyxml2/tinyxml2.cpp.s
+.PHONY : extern/tinyxml2/tinyxml2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,6 +240,9 @@ help:
 	@echo "... GoSheepGo/Core/GameWindow.o"
 	@echo "... GoSheepGo/Core/GameWindow.i"
 	@echo "... GoSheepGo/Core/GameWindow.s"
+	@echo "... extern/tinyxml2/tinyxml2.o"
+	@echo "... extern/tinyxml2/tinyxml2.i"
+	@echo "... extern/tinyxml2/tinyxml2.s"
 .PHONY : help
 
 

@@ -3,6 +3,7 @@
 
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o: ../core_lib/GoSheepGo/Core/Drawable.hh
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o: ../core_lib/GoSheepGo/Core/Helpers.hh
+core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o: ../core_lib/GoSheepGo/Core/PointTypes.hh
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o: ../core_lib/GoSheepGo/GoSheepHelpers.hh
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o: ../core_lib/GoSheepGo/Core/Drawable.cc
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/Drawable.cc.o: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL.h
@@ -105,4 +106,7 @@ core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o: /Users/peepeep
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/SDL_video.h
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/begin_code.h
 core_lib/CMakeFiles/GoSheepGo.dir/GoSheepGo/Core/GameWindow.cc.o: /Users/peepeepoopoo/projects/vcpkg/installed/x64-osx/include/SDL2/close_code.h
+
+core_lib/CMakeFiles/GoSheepGo.dir/extern/tinyxml2/tinyxml2.cpp.o: ../core_lib/extern/tinyxml2/tinyxml2.cpp
+core_lib/CMakeFiles/GoSheepGo.dir/extern/tinyxml2/tinyxml2.cpp.o: ../core_lib/extern/tinyxml2/tinyxml2.h
 
