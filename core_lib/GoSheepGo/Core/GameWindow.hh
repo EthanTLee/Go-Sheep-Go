@@ -13,6 +13,7 @@ class GameWindow {
 
     SDL_Window* m_window = nullptr;
     SDL_Surface* m_surface = nullptr;
+    SDL_Renderer* m_renderer = nullptr;
 
     void Update();
 };

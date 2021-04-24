@@ -22,18 +22,21 @@ struct pixelpt : public point {
 };
 
 
-struct sizept : public pixelpt {};
-
-
-inline SDL_Rect CreateRect (pixelpt position, sizept size) {
-    SDL_Rect ret;
-    ret.x = position.x;
-    ret.y = position.y;
-    ret.w = size.x;
-    ret.h = size.y;
-
-    return ret;
-}
+struct Rectangle {
+    Rectangle() {
+        m_rect.x = 0;
+        m_rect.y = 0;
+        m_rect.w = 0;
+        m_rect.h = 0;
+    }
+    Rectangle(pixelpt position, pixelpt size) {
+        m_rect.x = position.x;
+        m_rect.y = position.y;
+        m_rect.w = size.x;
+        m_rect.h = size.y;
+    }
+    SDL_Rect m_rect;
+};
 
 
 inline void Continue_Until_Quit() {

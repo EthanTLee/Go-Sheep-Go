@@ -19,6 +19,8 @@ SDL2/SDL.h
 /Users/peepeepoopoo/projects/GoSheepGo/tests/test_GameWindow.cpp
 catch.hpp
 /Users/peepeepoopoo/projects/GoSheepGo/tests/catch.hpp
+string
+-
 GoSheepGo/Core/GameWindow.hh
 -
 GoSheepGo/Core/Helpers.hh

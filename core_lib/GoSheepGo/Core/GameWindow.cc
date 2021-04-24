@@ -16,6 +16,7 @@ GameWindow::GameWindow(std::string name, int width, int height) {
         SDL_WINDOW_SHOWN
     );
     m_surface = SDL_GetWindowSurface(m_window);
+    m_renderer = SDL_CreateRenderer(m_window,-1,0);
 }    
 
 
